@@ -1,0 +1,9 @@
+- == 和 equals 的区别是什么？两个对象的 hashCode()相同，则 equals()也一定为 true，对吗？
+- final 在 java 中有什么作用？
+- Collection 和 Collections 有什么区别？
+- HashMap 和 Hashtable 有什么区别？
+- ArrayList 和 LinkedList 的区别是什么？
+- 说一下 HashMap 的实现原理？ 
+- 什么是 java 序列化？什么情况下需要序列化？
+- 深拷贝和浅拷贝区别是什么？
+- try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？ 
