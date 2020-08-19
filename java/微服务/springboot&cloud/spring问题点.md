@@ -3,3 +3,10 @@
 - WebMvcConfigurer  这个类如何使用
 - WebMvcConfigurerAdapter已不推荐使用，使用接口WebMvcConfigurer？
 - WebRequestInterceptor
+- MessageSource
+- LocaleContextHolder
+- RegistrationBean
+- ServletContextInitializer 和 ServletContext
+- InterceptorRegistry
+- LocaleResolver
+- Aware接口
