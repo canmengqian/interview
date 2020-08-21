@@ -6,7 +6,7 @@
 - MessageSource
 - LocaleContextHolder
 - RegistrationBean
-- ServletContextInitializer 和 ServletContext
-- InterceptorRegistry
-- LocaleResolver
-- Aware接口
+         - ServletContextInitializer 和 ServletContext
+         - InterceptorRegistry
+         - LocaleResolver
+         - Aware接口
