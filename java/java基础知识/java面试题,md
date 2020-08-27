@@ -7,3 +7,4 @@
 - 什么是 java 序列化？什么情况下需要序列化？
 - 深拷贝和浅拷贝区别是什么？
 - try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？ 
+- [JAVA8 Consumer接口](https://blog.csdn.net/qq_28410283/article/details/80618456)
