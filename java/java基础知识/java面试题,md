@@ -6,7 +6,7 @@
 - 说一下 HashMap 的实现原理？ 
 - 什么是 java 序列化？什么情况下需要序列化？
 - 深拷贝和浅拷贝区别是什么？
-- try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？ 
+- try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？
 
 
 
@@ -257,3 +257,4 @@ CheckedException
 \- [Spring常见面试题总结（超详细回答）](https://blog.csdn.net/a745233700/article/details/80959716)
 
 \- [69道Spring面试题和答案](https://ifeve.com/spring-interview-questions-and-answers/)
+- [JAVA8 Consumer接口](https://blog.csdn.net/qq_28410283/article/details/80618456)
