@@ -20,3 +20,8 @@
 - synchronized 和 Lock 有什么区别？
 - synchronized 和 ReentrantLock 区别是什么？
 - 说一下 atomic 的原理？
+
+```java
+
+```
+

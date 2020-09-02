@@ -6,5 +6,255 @@
 - 说一下 HashMap 的实现原理？ 
 - 什么是 java 序列化？什么情况下需要序列化？
 - 深拷贝和浅拷贝区别是什么？
-- try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？ 
+- try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？
+
+
+
+<font size="4px" color="green">**面向对象的特征**</font>
+
+继承,封装,多态
+
+------
+
+<font size="4px" color="green">**HashCode和equals的区别**</font><font color="red">(重点)</font>
+
+.equals()相等的两个对象，hashcode()一定相等；equals()不相等的两个对象，却并不能证明他们的hashcode()不相等。
+
+1）对于==，如果作用于基本数据类型的变量，则直接比较其存储的 “值”是否相等；如果作用于引用类型的变量，则比较的是所指向的对象的地址
+
+2）对于equals方法，注意：equals方法不能作用于基本数据类型的变量 ,如果没有对equals方法进行重写，则比较的是引用类型的变量所指向的对象的地址；诸如String、Date等类对equals方法进行了重写的话，比较的是所指向的对象的内容。
+
+ [java 中 “==” 和 equals 的区别](https://www.cnblogs.com/www123----/p/7857298.html)
+
+ [java中hashcode和equals的区别和联系](https://www.cnblogs.com/xiohao/p/4199446.html)
+
+------
+
+<font size="4px" color="green">** 二阶提交,三阶提交,**</font><font color="red">(重点)</font>
+
+***
+
+
+
+<font size="4px" color="green">** ArrayList和LinkedList的区别**</font><font color="red">(重点)</font>
+
+
+
+ArrayList 底层是动态数组,内存单元连续且容量固定,如果超过最大容量,则需要使用Arrays.copy进行数组拷贝,扩容因子为0.75。ArrayList在访问上的时间复杂度为1,因为只需要知道首地址+偏移量就知道元素的存储位置,在删除和增加上需要N,因为需要涉及数组的移动。
+
+LinkedList底层使用双端链表,存储上可以是不连续的,只需要维护前缀和后缀指针即可,但是会更消耗内存。查询和删除效率均为N,
+
+小数据量上LinkedList会稍微占据优势,大数据量上LinkedList可能会引发OOM
+
+
+
+------
+
+
+
+<font size="4px" color="green">**Hashmap**</font><font color="red">(重点)</font>
+
+------
+
+<font size="4px" color="green">**如何创建不可变对象**</font>
+
+使用final static关键字,在类属性上使用final仍然是不安全的,可以使用反射技术进行修改。
+
+------
+
+<font size="4px" color="green">**常用设计模式**</font><font color="red">(重点)</font>
+
+单例(饿汉,懒汉,双重检查锁),工厂,建造者,装饰器,策略,观察者
+
+------
+
+<font size="4px" color="green">** finalize()方法的含义**</font><br/>
+
+finalize()方法用于对象的回收,如果某个对象第一次被标记为清除对象,如果在执行finalize()方法时能被其他引用关联上,那么不会被GC回收。《深入理解JVM虚拟机》
+
+------
+
+<font size="4px" color="green">**常用的注入方式**</font><font color="red">(重点)</font>
+
+方法注入,接口注入,工厂注入,构造器注入
+
+------
+
+<font size="4px" color="green">**面向对象的设计原则**</font>
+
+开闭原则,单一职责,接口隔离,组合原则,迪米特法则,里氏代换原则,依赖倒转
+
+------
+
+
+
+<font size="4px" color="green">**反射创建方式:ClassLoader,class,构造器,Method**</font>
+
+------
+
+
+
+<font size="4px" color="green">**动态代理**</font>
+
+<font size="4px" color="green">**数组和链表的时间复杂度**</font><font color="red">(重点)</font>
+
+------
+
+<font size="4px" color="green">**Java异常(运行时异常,checked异常)<**</font>font color="red">(重点)</font>
+
+
+
+RunTimeException
+
+CheckedException
+
+-------
+
+<font size="4px" color="green">**Jvm发生stackOverrFlow异常引起的原因**</font>
+
+
+
+ 某个方法迭代超过最大方法栈的深度
+
+
+
+------
+
+
+
+<font size="4px" color="green">**spring加载流程,bean的作用域**</font><font color="red">(重点)</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">** AOP术语,连接点,切入点,增强,切面**</font><font color="red">(重点)</font>
+
+
+
+
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 简述 Http 请求 get 和 post 的区别以及数据包格式。**</font><font color="red">(重点)</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 剔除算法有哪些LRU,LFU,FIFO**</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 什么是RESTFUL**</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 类的实例化流程**</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">**深拷贝和浅拷贝区别**</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">**Mybatis的运行**</font>
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 常用的负载均衡算法**</font>
+
+
+
+轮询,hash,最少连接数
+
+
+
+------
+
+
+
+<font size="4px" color="green">** 说一说事务**</font>
+
+
+
+------
+
+<font size="4px" color="green">**二叉树前中后排序**</font>
+
+
+
+------
+
+
+
+\- IO模型 阻塞式io，非阻塞io，io复用模型，信号驱动io模型，异步io模型。(高级)
+
+
+
+------
+
+
+
+\- 对象如何晋升到老年代
+
+
+
+------
+
+
+
+\- 垃圾收集器的算法分类(清除-整理,标记-整理,标记-复制)
+
+
+
+------
+
+<font size="4px" color="green">**Copy on Write**</font>
+
+
+
+------
+
+<font size="4px" color="green">**ConcurrentHashMap的迭代器是强一致性迭代器还是弱一致性迭代器**</font>
+
+
+
+####  参考文档
+
+\- [2019JAVA面试题附答案](https://blog.csdn.net/weixin_43495390/article/details/86533482)
+
+\- [最近5年183个Java面试问题列表及答案［最全］](https://www.cnblogs.com/goody9807/p/6425399.html)
+
+\- [Spring常见面试题总结（超详细回答）](https://blog.csdn.net/a745233700/article/details/80959716)
+
+\- [69道Spring面试题和答案](https://ifeve.com/spring-interview-questions-and-answers/)
 - [JAVA8 Consumer接口](https://blog.csdn.net/qq_28410283/article/details/80618456)
