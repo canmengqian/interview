@@ -1,4 +1,4 @@
-## elasticsearch入门
+## Elasticsearch入门
 
 [TOC]
 
@@ -291,7 +291,94 @@ PUT test1/doc/3
   }
   ```
 
+- **should查询:** (只要符合其中一个条件就返回),**相当于OR**
+
+  ```json
+  GET test/doc/_search
+  {
+    "query": {
+      "bool": {
+        "should": [
+          {
+            "match": {
+            "name": "wangjifei"
+          }
+          },{
+            "match": {
+              "age": 27
+            }
+          }
+        ]
+      }
+    }
+  }
+  ```
+
+- **filter(条件过滤查询**，过滤条件的范围用range表示gt表示大于、lt表示小于、gte表示大于等于、lte表示小于等于)
+
+  ```json
+  GET test/doc/_search
+  {
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match": {
+              "name": "wangjifei"
+            }
+          }
+        ],
+        "filter": {
+          "range": {
+            "age": {
+              "gte": 10,
+              "lt": 27
+            }
+          }
+        }
+      }
+    }
+  }
+  ```
+
+#### 高亮查询
+
+- ```json
+  ####准备数据
   
+  PUT test3/doc/1
+  {
+    "name":"顾老二",
+    "age":30,
+    "from": "gu",
+    "desc": "皮肤黑、武器长、性格直",
+    "tags": ["黑", "长", "直"]
+  }
+  ```
+
+  ```json
+  GET test3/doc/_search
+  {
+    "query": {
+      "match": {
+        "name": "顾老二"
+      }
+    },
+    "highlight": {
+      "fields": {
+        "name": {}
+      }
+    }
+  }
+  ```
+
+#### ES之精确查询与模糊查询
+
+#### ES的聚合查询avg、max、min、sum
+
+#### ES的分组查询
+
+#### ES之Mappings
 
 #### 删除 文档,索引
 
