@@ -18,6 +18,9 @@
 
 ## Spring注解使用
 
+- @ExceptionHandler
+- @ResponseStatus
+
 ## Spring事件
 
 ## Spring缓存使用
@@ -25,6 +28,12 @@
 ## Spring Aop切面编程
 
 ## Spring 事务
+
+Spring事务隔离级别
+
+事务超时,事务传播是什么意思
+
+事务同步管理器
 
 
 

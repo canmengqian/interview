@@ -1,5 +1,9 @@
 ## Lambada表达式
 
+[TOC]
+
+
+
 ### Java8新特性
 
 1. `Lambda 表达式` − Lambda 允许把函数作为一个方法的参数（函数作为参数传递到方法中）。
@@ -10,7 +14,7 @@
 6. `Date Time API` − 加强对日期与时间的处理。
 7. `Optional 类` − Optional 类已经成为 Java 8 类库的一部分，用来解决空指针异常。
 
-### **Lambada表达式语法**
+### Lambada表达式语法
 
 - 语法规则
 
@@ -30,3 +34,17 @@
 - 变量作用域
   
   - lambda 表达式只能引用标记了 final 的外层局部变量，不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误
+
+### 函数式接口
+
+| **接口**                 | **描述**                                               |
+| ------------------------ | ------------------------------------------------------ |
+| BiConsumer<T,U>          | 代表了一个接受两个输入参数的操作，并且不返回任何结果   |
+| Consumer<T>              | 接受一个输入参数并且无返回的操作                       |
+| **DoubleConsumer**       | 接受double值参数的操作，并且不返回结果                 |
+| **IntConsumer**          | int类型的输入参数，无返回值                            |
+| **LongConsumer**         | 接受一个long类型的输入参数，无返回值。                 |
+| **ObjDoubleConsumer<T>** | 接受一个object类型和一个double类型的输入参数，无返回值 |
+| **ObjIntConsumer<T>**    | 接受一个object类型和一个int类型的输入参数，无返回值    |
+| **ObjLongConsumer<T>**   | 接受一个object类型和一个long类型的输入参数，无返回值。 |
+
