@@ -1,4 +1,4 @@
-# rabbitMq知识点
+# RabbitMq知识点
 
 [TOC]
 
@@ -32,11 +32,11 @@
 
 ### 队列相关属性设置
 
-| 属性 | 备注                                                         |
-| ---- | ------------------------------------------------------------ |
-| TTL  | 消息在队列中的生存时间一旦超过设置的TTL值时，就会变成“死信”（Dead Message），消费者将无法再收到该消息<br />如果对队列本身设置TTL，队列在到达存活时间后会自动删除 |
-|      |                                                              |
-|      |                                                              |
+| 属性      | 备注                                                         |
+| --------- | ------------------------------------------------------------ |
+| TTL       | 消息在队列中的生存时间一旦超过设置的TTL值时，就会变成“死信”（Dead Message），消费者将无法再收到该消息<br />如果对队列本身设置TTL，队列在到达存活时间后会自动删除 |
+| exclusive | 队列是否是排他的。                                           |
+|           |                                                              |
 
 ## RabbitMQ中消息语义和顺序性
 
@@ -57,4 +57,48 @@
 
 ### RabbitMQ能否保障消息的顺序性,哪些场景下会出现消息乱序的情况
 
-​	
+​	RabbitMq不能保障消息的顺序性
+
+1. **生产者使用了事务机制**，在发送消息之后遇到异常进行了事务回滚，那么需要重新补偿发送这条消息，如果补偿发送是在另一个线程实现的，那么消息在生产者这个源头就出现了错序。同样，如果启用publisher confirm时，在发生超时、中断，又或者是收到RabbitMQ的Basic.Nack命令时，那么同样需要补偿发送，结果与事务机制一样会错序.
+2. 消息设置了优先级，那么消费者消费到的消息也必然不是顺序性的。
+
+## RabbitMQ 常用命令
+
+### 插件命令
+
+| 命令                                         | 说明                        |
+| -------------------------------------------- | --------------------------- |
+| rabbitmq-plugins enable rabbitmq_management  | 开启RabbitMQ managmenet插件 |
+| rabbitmq-plugins list                        |                             |
+| rabbitmq-plugins disable rabbitmq_management |                             |
+
+### 应用管理命令
+
+| 命令                                                         | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **rabbitmqctl stop [pid_file]**                              | 用于停止运行RabbitMQ的Erlang虚拟机和RabbitMQ服务应用rabbitmq-plugins list |
+| **rabbitmqctl shutdown**                                     | 用于停止运行RabbitMQ的Erlang虚拟机和RabbitMQ服务应用。rabbitmq-plugins disable rabbitmq_management |
+| **rabbitmqctl stop_app**                                     | 停止RabbitMQ服务应用，但是Erlang虚拟机还是处于运行状态。     |
+| **rabbitmqctl start_app**                                    |                                                              |
+| **rabbitmqctl reset**                                        | 将RabbitMQ节点重置还原到最初状态。包括从原来所在的集群中删除此节点，从管理数据库中删除所有的配置数据，如已配置的用户、vhost等，以及删除所有的持久化消息。执行rabbitmqctl reset命令前必须停止RabbitMQ应用（比如先执行rabbitmqctl stop_app）。 |
+| **rabbitmqctl force_reset**                                  | 强制将RabbitMQ节点重置还原到最初状态。不同于rabbitmqctl reset命令，rabbitmqctl force_reset命令不论当前管理数据库的状态和集群配置是什么，都会无条件地重置节点。它只能在数据库或集群配置已损坏的情况下使用。 |
+| **rabbitmqctl list_queues [-p vhost] [queueinfoitem ...]**   | 服务器状态的查询会返回一个以制表符分隔的列表                 |
+| **rabbitmqctl list_exchanges [-p vhost] [exchangeinfoitem ...]** | 查询交换器信息                                               |
+| **rabbitmqctl list_bindings [-p vhost] [bindinginfoitem ...]** | 获取绑定key的信息                                            |
+| **rabbitmqctl list_connections [connectioninfoitem ...]**    | 获取TCP连接信息                                              |
+| **rabbitmqctl list_channels [channelinfoitem ...]**          | 获取连接信道信息                                             |
+| **rabbitmqctl list_consumers [-p vhost]**                    | 获取消费者信息                                               |
+| **rabbitmqctl status**                                       | 获取server的状态                                             |
+| **rabbitmqctl node_health_check**                            | 获取节点健康检查                                             |
+| **rabbitmqctl report**                                       | 服务器状态报告生成                                           |
+
+### 集群管理
+
+| 命令                                                 | 说明                                                         |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| **rabbitmqctl join_cluster {cluster_node} [--ram]**  | 将节点加入指定集群中。在这个命令执行前需要停止RabbitMQ应用并重置节点。 |
+| **rabbitmqctl cluster_status**                       | 显示集群的状态                                               |
+| **rabbitmqctl change_cluster_node_type {disc，ram}** | 修改集群节点的类型                                           |
+| **rabbitmqctl forget_cluster_node [--offline]**      | 节点下线                                                     |
+| **rabbitmqctl update_cluster_nodes {clusternode}**   |                                                              |
+| **rabbitmqctl set_cluster_name {name}**              |                                                              |
