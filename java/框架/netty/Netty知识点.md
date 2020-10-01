@@ -9,45 +9,49 @@
 
 ## Netty重要的组件
 
-| 组件名                  | 描述                                                         |      |
-| ----------------------- | ------------------------------------------------------------ | ---- |
-| **字节容器**            |                                                              |      |
-| ByteBuf                 |                                                              |      |
-| ByteProcessor           |                                                              |      |
-| ByteBufHolder           |                                                              |      |
-| **编码和解码器**        | 包含基于json,xml,protobuf,String的编码和反编码,包含加密和压缩算法 |      |
-| ByteToMessageDecoder    |                                                              |      |
-| ReplayingDecoder        |                                                              |      |
-| MessageToMessageDecoder |                                                              |      |
-| MessageToByteEncoder    |                                                              |      |
-| NameResolver            |                                                              |      |
-| AddressResolver         |                                                              |      |
-|                         |                                                              |      |
-| **事件循环组件**        |                                                              |      |
-| EventLoop               |                                                              |      |
-| EventLoopGroup          |                                                              |      |
-| EventExecutorGroup      |                                                              |      |
-| EventExecutor           |                                                              |      |
-| **通道类组件**          |                                                              |      |
-| ChannelHandlerContext   |                                                              |      |
-| ChannelPipeline         |                                                              |      |
-| ChannelInitializer      |                                                              |      |
-| ChannelConfig           |                                                              |      |
-| ChannelHandler          |                                                              |      |
-| ChannelHandlerAdapter   |                                                              |      |
-| ChannelFuture           |                                                              |      |
-| ChannelFutureListener   |                                                              |      |
-| ChannelOutboundHandler  |                                                              |      |
-| ChannelPromise          |                                                              |      |
-| ChannelOption           |                                                              |      |
-| **引导类组件**          | 一个进程绑定到某个指定的端口                                 |      |
-| AbstractBootstrap       |                                                              |      |
-| Bootstrap               | 客户端                                                       |      |
-| ServerBootstrap         | 服务器                                                       |      |
-|                         |                                                              |      |
-| **工具类**              |                                                              |      |
-| ResourceLeakDetector    | 内存泄露探测器                                               |      |
-| ReferenceCountUtil      |                                                              |      |
+| 组件名                                | 描述                                                         |      |
+| ------------------------------------- | ------------------------------------------------------------ | ---- |
+| **字节容器**                          |                                                              |      |
+| ByteBuf                               |                                                              |      |
+| ByteProcessor                         |                                                              |      |
+| ByteBufHolder                         |                                                              |      |
+| **编码和解码器**                      | 包含基于json,xml,protobuf,String的编码和反编码,包含加密和压缩算法 |      |
+| ByteToMessageDecoder                  |                                                              |      |
+| ReplayingDecoder                      |                                                              |      |
+| MessageToMessageDecoder               |                                                              |      |
+| MessageToByteEncoder                  |                                                              |      |
+| MessageToMessageEncoder               |                                                              |      |
+| ObjectDecoder<br />ObjectEncoder      |                                                              |      |
+| MarshallingDecoder MarshallingEncoder | 适用于使用 JBoss Marshalling 的节点                          |      |
+| ProtobufDecoder<br />ProtobufEncoder  |                                                              |      |
+| NameResolver                          |                                                              |      |
+| AddressResolver                       |                                                              |      |
+|                                       |                                                              |      |
+| **事件循环组件**                      |                                                              |      |
+| EventLoop                             |                                                              |      |
+| EventLoopGroup                        |                                                              |      |
+| EventExecutorGroup                    |                                                              |      |
+| EventExecutor                         |                                                              |      |
+| **通道类组件**                        |                                                              |      |
+| ChannelHandlerContext                 |                                                              |      |
+| ChannelPipeline                       |                                                              |      |
+| ChannelInitializer                    |                                                              |      |
+| ChannelConfig                         |                                                              |      |
+| ChannelHandler                        |                                                              |      |
+| ChannelHandlerAdapter                 |                                                              |      |
+| ChannelFuture                         |                                                              |      |
+| ChannelFutureListener                 |                                                              |      |
+| ChannelOutboundHandler                |                                                              |      |
+| ChannelPromise                        |                                                              |      |
+| ChannelOption                         |                                                              |      |
+| **引导类组件**                        | 一个进程绑定到某个指定的端口                                 |      |
+| AbstractBootstrap                     |                                                              |      |
+| Bootstrap                             | 客户端                                                       |      |
+| ServerBootstrap                       | 服务器                                                       |      |
+|                                       |                                                              |      |
+| **工具类**                            |                                                              |      |
+| ResourceLeakDetector                  | 内存泄露探测器                                               |      |
+| ReferenceCountUtil                    |                                                              |      |
 
 ## Channel、 EventLoop、 Thread 以及 EventLoopGroup 之间的关系  
 
