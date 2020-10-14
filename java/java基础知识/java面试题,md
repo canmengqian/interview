@@ -16,6 +16,27 @@
 
 ------
 
+<font size="4px" color="green">**重写和重载的区别**</font>
+
+| 区别点   | 重载                                         | 重写Override                                                 |
+| -------- | -------------------------------------------- | ------------------------------------------------------------ |
+| 范围     | 在一个类中                                   | 发生在父类与子类之间                                         |
+| 参数     | 参数类型不同、参数个数不同甚至是参数顺序不同 | 参数列表，返回类型（除过子类中方法的返回类型是父类中返回类型的子类）必须相同 |
+| 返回类型 | 重载对返回类型没有要求，可以相同也可以不同   | 访问修饰符的限制一定要大于被重写方法的访问修饰符（public>protected>default>private) |
+
+------
+
+<font size="4px" color="green">**编译时异常和运行时异常**</font>
+
+| 编译时异常               | 运行时异常                         |
+| ------------------------ | ---------------------------------- |
+| SQLException             | StringIndexOutOfBoundsException 、 |
+| IOexception              | ArrayIndexOutOfBoundsException 、  |
+| FileNotFoundException    | ArithmeticException 、             |
+| ClassNotFoundException   | IllegaArguementException 、        |
+| EOFException             | NullPointException                 |
+| IllegaArguementException |                                    |
+
 <font size="4px" color="green">**HashCode和equals的区别**</font><font color="red">(重点)</font>
 
 .equals()相等的两个对象，hashcode()一定相等；equals()不相等的两个对象，却并不能证明他们的hashcode()不相等。
@@ -32,25 +53,13 @@
 
 <font size="4px" color="green">** 二阶提交,三阶提交,**</font><font color="red">(重点)</font>
 
-***
-
-
-
 <font size="4px" color="green">** ArrayList和LinkedList的区别**</font><font color="red">(重点)</font>
-
-
 
 ArrayList 底层是动态数组,内存单元连续且容量固定,如果超过最大容量,则需要使用Arrays.copy进行数组拷贝,扩容因子为0.75。ArrayList在访问上的时间复杂度为1,因为只需要知道首地址+偏移量就知道元素的存储位置,在删除和增加上需要N,因为需要涉及数组的移动。
 
 LinkedList底层使用双端链表,存储上可以是不连续的,只需要维护前缀和后缀指针即可,但是会更消耗内存。查询和删除效率均为N,
 
 小数据量上LinkedList会稍微占据优势,大数据量上LinkedList可能会引发OOM
-
-
-
-------
-
-
 
 <font size="4px" color="green">**Hashmap**</font><font color="red">(重点)</font>
 
@@ -257,4 +266,5 @@ CheckedException
 \- [Spring常见面试题总结（超详细回答）](https://blog.csdn.net/a745233700/article/details/80959716)
 
 \- [69道Spring面试题和答案](https://ifeve.com/spring-interview-questions-and-answers/)
+
 - [JAVA8 Consumer接口](https://blog.csdn.net/qq_28410283/article/details/80618456)
