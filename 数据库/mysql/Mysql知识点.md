@@ -19,13 +19,14 @@
 
 索引失效，索引优化
 
-752283659
+# 
 
+## 链接
 
-
-
-
-
+1. [mysql四大排名函数(row_number、rank、dense_rank、ntile)使用简介](https://blog.csdn.net/qq_31476455/article/details/90028819)
+2. [MySQL case when 用法](https://www.cnblogs.com/chenduzizhong/p/9590741.html)
+3. [50道SQL练习题及答案与详细分析](https://www.jianshu.com/p/476b52ee4f1b)
+4. [面试 SQL整理 常见的SQL面试题：经典50题](https://blog.csdn.net/u010565545/article/details/100785261#%E5%B8%B8%E8%A7%81%E7%9A%84SQL%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E7%BB%8F%E5%85%B850%E9%A2%98)
 
 SQL优化
 
