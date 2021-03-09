@@ -6,8 +6,7 @@
 - MessageSource
 - LocaleContextHolder
 - RegistrationBean
-         - ServletContextInitializer 和 ServletContext
-         - InterceptorRegistry
-         - LocaleResolver
-         - Aware接口
-- [Caffeine Cache-高性能Java本地缓存组件](https://www.cnblogs.com/rickiyang/p/11074158.html)
+      - ServletContextInitializer 和 ServletContext
+          - InterceptorRegistry
+          - LocaleResolver
+          - Aware接口

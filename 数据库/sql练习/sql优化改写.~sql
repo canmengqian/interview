@@ -1,0 +1,62 @@
+--2.7
+select e.empno,
+       e.ename,
+       case
+         when e.sal >= 1000 and e.sal <= 2000 then
+          1
+         else
+          2
+       end  as levelc,
+       e.sal
+  from emp e order by levelc asc , e.sal asc ;
+
+-- 2.7 写法2
+select e.empno,
+       e.ename,
+       e.sal
+  from emp e order by case
+ when e.sal >= 1000 and e.sal <= 2000 then 1 else 2 end asc, e.sal asc;
+ 
+ -- 
+ DROP TABLE emp2 PURGE;
+ Create Table emp2 AS 
+ select ename , job , sal ,comm from emp where job = 'CLERK'
+ 
+ explain Plan for select e.* from emp e where e.ename in( select ename from emp2);
+ --select e.* from emp e where e.ename exists ( select ename from emp2);
+ select * from table(dbms_xplan.display)
+ -- 3.13
+ select e.ename,e.comm from emp e where coalesce(e.comm,0) < (select comm from emp where ename='ALLEN');
+  -- TODO
+ update emp set deptno = null where empno = 7788;commit;
+ select d.* from dept d where d.deptno not in (select deptno from emp where deptno is not null);
+ 
+ --6.2
+ select e.empno, e.ename,sum(e.sal) over (order by e.sal) from emp e ;
+ select e.deptno as deptno , e.empno as empno, e.ename as ename ,e.sal as sal, sum(e.sal) over(order by sal asc ) as gsum from emp e where e.deptno=10
+ union all 
+ -- 按照部门的员工进行工资累加
+ select e.deptno as deptno ,0 as empno, '--' as ename,sum(e.sal) as sal, 0 as gsum  from emp e group by e.deptno
+ union all
+ select -1 as deptno,-1 as empno, '--' as ename,sum(e.sal) as sal, 0 as gsum  from emp e
+ --listagg写法
+ select e.deptno as deptno,
+        e.empno as empno,
+        e.ename as ename,
+        e.sal as sal,
+        sum(e.sal) over(order by sal asc) as gsum,
+        (select listagg(sal,'+') within group(order by empno) from emp a where a.deptno = 10 and a.empno<=e.empno ) as 计算公式
+   from emp e
+  where e.deptno = 10 order by e.empno 
+ 
+ --6.5 排名
+ select e.deptno as deptno,
+        e.empno as empno,
+        e.ename as ename,
+        e.sal as sal,
+        row_number() over(partition by e.deptno order by e.sal) as row_num,
+        rank() over(partition by e.deptno order by e.sal) as rank_w,
+        dense_rank() over(partition by e.deptno order by e.sal) as denserank
+   from emp e
+   order by deptno 
+        
