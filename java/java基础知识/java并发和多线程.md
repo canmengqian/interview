@@ -8,6 +8,7 @@
 - notify()和 notifyAll()有什么区别？
 - 线程的 run()和 start()有什么区别？
 - 创建线程池有哪几种方式？
+    - [创建线程池有哪几种方式](https://blog.csdn.net/ITzhanghao/article/details/100151997)
 - 线程池都有哪些状态？
 - 线程池中 submit()和 execute()方法有什么区别？
 - 在 java 程序中怎么保证多线程的运行安全？
