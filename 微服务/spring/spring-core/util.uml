@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.util</OriginalElement>
+  <nodes>
+    <node x="569.0" y="2230.0">org.springframework.util.Base64Utils</node>
+    <node x="1135.0" y="1850.0">org.springframework.util.xml.SimpleTransformErrorListener</node>
+    <node x="0.0" y="2080.0">org.springframework.util.StringValueResolver</node>
+    <node x="748.0" y="2230.0">org.springframework.util.NumberUtils</node>
+    <node x="1661.0" y="2080.0">org.springframework.util.CompositeIterator</node>
+    <node x="1098.0" y="1620.0">org.springframework.util.WeakReferenceMonitor.MonitoringProcess</node>
+    <node x="554.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.EntryIterator</node>
+    <node x="1447.0454545454545" y="670.0">org.springframework.util.concurrent.SettableListenableFuture</node>
+    <node x="646.0" y="1695.0">org.springframework.util.CustomizableThreadCreator</node>
+    <node x="195.0" y="2230.0">org.springframework.util.ErrorHandler</node>
+    <node x="282.5" y="515.0">org.springframework.util.ConcurrentReferenceHashMap.WeakEntryReference</node>
+    <node x="106.0" y="1385.0">org.springframework.util.SimpleRouteMatcher</node>
+    <node x="1529.5" y="1230.0">org.springframework.util.xml.StaxEventHandler.LocatorLocationAdapter</node>
+    <node x="382.0" y="2230.0">org.springframework.util.package-info</node>
+    <node x="747.75" y="915.0">org.springframework.util.backoff.FixedBackOff</node>
+    <node x="1030.0" y="1385.0">org.springframework.util.AlternativeJdkIdGenerator</node>
+    <node x="108.0" y="1775.0">org.springframework.util.concurrent.ListenableFutureCallbackRegistry.State</node>
+    <node x="270.0" y="80.0">org.springframework.util.AntPathMatcher</node>
+    <node x="1308.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Entry</node>
+    <node x="326.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.EntrySet</node>
+    <node x="1044.5" y="1070.0">org.springframework.util.PropertyPlaceholderHelper</node>
+    <node x="1643.0" y="2230.0">org.springframework.util.ClassUtils</node>
+    <node x="922.0" y="915.0">org.springframework.util.backoff.BackOffExecution</node>
+    <node x="1888.0" y="2080.0">org.springframework.util.PatternMatchUtils</node>
+    <node x="0.0" y="1540.0">org.springframework.util.UpdateMessageDigestInputStream</node>
+    <node x="641.0" y="1850.0">org.springframework.util.StopWatch</node>
+    <node x="271.22727272727275" y="680.0">org.springframework.util.LinkedCaseInsensitiveMap.EntryIterator</node>
+    <node x="341.00000000000006" y="1385.0">org.springframework.util.ReflectionUtils.MethodFilter</node>
+    <node x="267.0" y="1850.0">org.springframework.util.xml.StaxUtils</node>
+    <node x="937.0" y="1775.0">org.springframework.util.xml.ListBasedXMLEventReader</node>
+    <node x="0.0" y="2155.0">org.springframework.util.function.SingletonSupplier</node>
+    <node x="431.14285714285717" y="835.0">org.springframework.util.CollectionUtils</node>
+    <node x="1498.0" y="1385.0">org.springframework.util.JdkIdGenerator</node>
+    <node x="1121.0454545454545" y="750.0">org.springframework.util.concurrent.MonoToListenableFutureAdapter</node>
+    <node x="0.0" y="760.0">org.springframework.util.LinkedCaseInsensitiveMap.EntrySetIterator</node>
+    <node x="1541.0" y="2155.0">org.springframework.util.FileCopyUtils</node>
+    <node x="334.0" y="2305.0">org.springframework.util.unit.DataUnit</node>
+    <node x="1326.0454545454545" y="590.0">org.springframework.util.concurrent.ListenableFuture</node>
+    <node x="1100.0" y="2005.0">org.springframework.util.comparator.InvertibleComparator</node>
+    <node x="227.22727272727275" y="590.0">org.springframework.util.LinkedCaseInsensitiveMap</node>
+    <node x="681.0" y="2155.0">org.springframework.util.xml.TransformerUtils</node>
+    <node x="1128.25" y="915.0">org.springframework.util.backoff.ExponentialBackOff</node>
+    <node x="1814.0" y="2230.0">org.springframework.util.xml.StaxSource</node>
+    <node x="1568.0" y="1620.0">org.springframework.util.concurrent.ListenableFutureCallback</node>
+    <node x="1351.0" y="2005.0">org.springframework.util.comparator.ComparableComparator</node>
+    <node x="0.0" y="1150.0">org.springframework.util.xml.StaxEventContentHandler</node>
+    <node x="737.0454545454546" y="670.0">org.springframework.util.concurrent.FutureAdapter.State</node>
+    <node x="656.5" y="315.0">org.springframework.util.ConcurrentReferenceHashMap</node>
+    <node x="0.0" y="160.0">org.springframework.util.AntPathMatcher.AntPatternComparator</node>
+    <node x="1511.0" y="1540.0">org.springframework.util.concurrent.SuccessCallback</node>
+    <node x="1736.0" y="2155.0">org.springframework.util.MethodInvoker</node>
+    <node x="243.0" y="2080.0">org.springframework.util.CachingMapDecorator</node>
+    <node x="1224.0" y="1775.0">org.springframework.util.xml.XMLEventStreamReader</node>
+    <node x="226.0" y="160.0">org.springframework.util.AntPathMatcher.PathSeparatorPatternCache</node>
+    <node x="1286.5" y="1150.0">org.springframework.util.SystemPropertyUtils</node>
+    <node x="1931.0" y="2155.0">org.springframework.util.function.SupplierUtils</node>
+    <node x="1300.0" y="1620.0">org.springframework.util.WeakReferenceMonitor.ReleaseListener</node>
+    <node x="504.75" y="915.0">org.springframework.util.CollectionUtils.EnumerationIterator</node>
+    <node x="486.0" y="2080.0">org.springframework.util.SerializationUtils</node>
+    <node x="1363.25" y="995.0">org.springframework.util.xml.StaxStreamXMLReader</node>
+    <node x="724.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Reference</node>
+    <node x="291.0" y="2005.0">org.springframework.util.InvalidMimeTypeException</node>
+    <node x="27.227272727272748" y="680.0">org.springframework.util.LinkedCaseInsensitiveMap.KeySet</node>
+    <node x="0.0" y="1385.0">org.springframework.util.RouteMatcher.Route</node>
+    <node x="721.0" y="2080.0">org.springframework.util.ConcurrentLruCache</node>
+    <node x="1747.5" y="1150.0">org.springframework.util.xml.StaxStreamHandler</node>
+    <node x="282.0" y="0.0">org.springframework.util.PathMatcher</node>
+    <node x="927.0" y="2230.0">org.springframework.util.ObjectUtils</node>
+    <node x="171.0" y="2305.0">org.springframework.util.TypeUtils</node>
+    <node x="80.75" y="835.0">org.springframework.util.MultiValueMap</node>
+    <node x="278.75" y="915.0">org.springframework.util.CollectionUtils.MultiValueMapAdapter</node>
+    <node x="1602.0" y="2005.0">org.springframework.util.xml.XMLEventStreamWriter</node>
+    <node x="1640.5" y="1070.0">org.springframework.util.xml.AbstractStaxHandler</node>
+    <node x="843.0454545454546" y="670.0">org.springframework.util.concurrent.ListenableFutureAdapter</node>
+    <node x="0.0" y="2230.0">org.springframework.util.ResourceUtils</node>
+    <node x="52.75" y="915.0">org.springframework.util.MultiValueMapAdapter</node>
+    <node x="1296.0" y="1385.0">org.springframework.util.SimpleIdGenerator</node>
+    <node x="645.0" y="1930.0">org.springframework.util.StopWatch.TaskInfo</node>
+    <node x="1320.0" y="1305.0">org.springframework.util.IdGenerator</node>
+    <node x="1093.0454545454545" y="670.0">org.springframework.util.concurrent.CompletableToListenableFutureAdapter</node>
+    <node x="956.0" y="2080.0">org.springframework.util.comparator.InstanceComparator</node>
+    <node x="1119.0" y="2155.0">org.springframework.util.Log4jConfigurer</node>
+    <node x="1121.5" y="1230.0">org.springframework.util.SystemPropertyUtils.SystemPropertyPlaceholderResolver</node>
+    <node x="0.0" y="995.0">org.springframework.util.LinkedMultiValueMap</node>
+    <node x="534.0454545454545" y="760.0">org.springframework.util.LinkedCaseInsensitiveMap.KeySetIterator</node>
+    <node x="1553.5" y="1150.0">org.springframework.util.xml.StaxEventHandler</node>
+    <node x="0.0" y="1930.0">org.springframework.util.MimeTypeUtils.ConcurrentLruCache</node>
+    <node x="441.22727272727275" y="680.0">org.springframework.util.LinkedCaseInsensitiveMap.Values</node>
+    <node x="862.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Restructure</node>
+    <node x="347.0" y="1775.0">org.springframework.util.DefaultPropertiesPersister</node>
+    <node x="115.0" y="1070.0">org.springframework.util.xml.AbstractStaxContentHandler</node>
+    <node x="1569.25" y="915.0">org.springframework.util.xml.AbstractStaxXMLReader</node>
+    <node x="51.0" y="1305.0">org.springframework.util.RouteMatcher</node>
+    <node x="1539.0" y="1695.0">org.springframework.util.MimeType</node>
+    <node x="1616.1843434343434" y="750.0">org.springframework.util.concurrent.SettableListenableFuture.SettableTask</node>
+    <node x="227.0" y="2155.0">org.springframework.util.comparator.BooleanComparator</node>
+    <node x="492.0" y="160.0">org.springframework.util.AntPathMatcher.AntPathStringMatcher</node>
+    <node x="0.0" y="2305.0">org.springframework.util.xml.StaxResult</node>
+    <node x="695.6" y="1230.0">org.springframework.util.AutoPopulatingList.ReflectiveElementFactory</node>
+    <node x="10.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Segment</node>
+    <node x="1705.0454545454545" y="670.0">org.springframework.util.concurrent.ListenableFutureTask</node>
+    <node x="657.0" y="1385.0">org.springframework.util.ReflectionUtils.FieldCallback</node>
+    <node x="711.0" y="1150.0">org.springframework.util.AutoPopulatingList.ElementInstantiationException</node>
+    <node x="804.0" y="1850.0">org.springframework.util.ResizableByteArrayOutputStream</node>
+    <node x="755.0" y="1070.0">org.springframework.util.AutoPopulatingList</node>
+    <node x="1585.25" y="835.0">org.springframework.util.xml.AbstractXMLReader</node>
+    <node x="1191.0" y="2080.0">org.springframework.util.comparator.NullSafeComparator</node>
+    <node x="670.0" y="1775.0">org.springframework.util.CustomizableThreadCreator.SerializableMonitor</node>
+    <node x="36.0" y="240.0">org.springframework.util.AntPathMatcher.AntPatternComparator.PatternInfo</node>
+    <node x="356.04545454545456" y="760.0">org.springframework.util.LinkedCaseInsensitiveMap.ValuesIterator</node>
+    <node x="1330.0" y="2155.0">org.springframework.util.FileSystemUtils</node>
+    <node x="597.0" y="1620.0">org.springframework.util.StreamUtils.NonClosingOutputStream</node>
+    <node x="375.0" y="1695.0">org.springframework.util.PropertiesPersister</node>
+    <node x="779.0" y="995.0">org.springframework.util.backoff.FixedBackOff.FixedBackOffExecution</node>
+    <node x="1068.5" y="1150.0">org.springframework.util.PropertyPlaceholderHelper.PlaceholderResolver</node>
+    <node x="462.0" y="1850.0">org.springframework.util.SocketUtils</node>
+    <node x="167.0" y="1620.0">org.springframework.util.FastByteArrayOutputStream.FastByteArrayInputStream</node>
+    <node x="1757.0" y="1850.0">org.springframework.util.ConcurrencyThrottleSupport</node>
+    <node x="1450.0" y="1850.0">org.springframework.util.concurrent.DelegatingCompletableFuture</node>
+    <node x="827.0" y="1385.0">org.springframework.util.ReflectionUtils.MethodCallback</node>
+    <node x="132.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.ReferenceManager</node>
+    <node x="306.0" y="1540.0">org.springframework.util.FastByteArrayOutputStream</node>
+    <node x="900.0" y="2155.0">org.springframework.util.CommonsLogWriter</node>
+    <node x="765.2954545454546" y="590.0">org.springframework.util.concurrent.FutureAdapter</node>
+    <node x="970.0" y="835.0">org.springframework.util.backoff.BackOff</node>
+    <node x="1791.25" y="995.0">org.springframework.util.xml.AbstractStaxXMLReader.StaxLocator</node>
+    <node x="1697.0" y="1540.0">org.springframework.util.concurrent.FailureCallback</node>
+    <node x="503.00000000000006" y="1385.0">org.springframework.util.ReflectionUtils.FieldFilter</node>
+    <node x="1106.0" y="2230.0">org.springframework.util.DigestUtils</node>
+    <node x="1013.0" y="995.0">org.springframework.util.backoff.ExponentialBackOff.ExponentialBackOffExecution</node>
+    <node x="1581.25" y="995.0">org.springframework.util.xml.StaxEventXMLReader</node>
+    <node x="235.0" y="1930.0">org.springframework.util.xml.StaxUtils.Jaxp14StaxHandler</node>
+    <node x="1087.5" y="515.0">org.springframework.util.ConcurrentReferenceHashMap.SoftEntryReference</node>
+    <node x="51.0" y="1465.0">org.springframework.util.SimpleRouteMatcher.DefaultRoute</node>
+    <node x="489.0" y="2305.0">org.springframework.util.xml.DomUtils</node>
+    <node x="454.0" y="2155.0">org.springframework.util.xml.DomContentHandler</node>
+    <node x="1016.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.ReferenceType</node>
+    <node x="841.0" y="2005.0">org.springframework.util.xml.SimpleSaxErrorHandler</node>
+    <node x="1285.0" y="2230.0">org.springframework.util.comparator.Comparators</node>
+    <node x="0.0" y="1695.0">org.springframework.util.concurrent.ListenableFutureCallbackRegistry</node>
+    <node x="1212.0" y="1695.0">org.springframework.util.xml.AbstractXMLStreamReader</node>
+    <node x="941.0" y="1695.0">org.springframework.util.xml.AbstractXMLEventReader</node>
+    <node x="456.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Task</node>
+    <node x="839.0" y="1620.0">org.springframework.util.StreamUtils.NonClosingInputStream</node>
+    <node x="574.0" y="2005.0">org.springframework.util.xml.SimpleNamespaceContext</node>
+    <node x="644.0" y="2305.0">org.springframework.util.unit.DataSize</node>
+    <node x="760.0" y="1540.0">org.springframework.util.StreamUtils</node>
+    <node x="466.0" y="1930.0">org.springframework.util.SocketUtils.SocketType</node>
+    <node x="141.22727272727275" y="680.0">org.springframework.util.LinkedCaseInsensitiveMap.EntrySet</node>
+    <node x="1487.0" y="1775.0">org.springframework.util.MimeType.SpecificityComparator</node>
+    <node x="533.0" y="1150.0">org.springframework.util.AutoPopulatingList.ElementFactory</node>
+    <node x="1746.0" y="1775.0">org.springframework.util.ExceptionTypeFilter</node>
+    <node x="20.0" y="1850.0">org.springframework.util.MimeTypeUtils</node>
+    <node x="0.0" y="2005.0">org.springframework.util.xml.XmlValidationModeDetector</node>
+    <node x="1414.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.TaskOption</node>
+    <node x="1186.5" y="435.0">org.springframework.util.ConcurrentReferenceHashMap.Entries</node>
+    <node x="1766.0" y="1695.0">org.springframework.util.InstanceFilter</node>
+    <node x="4.0" y="1230.0">org.springframework.util.xml.StaxEventContentHandler.LocatorLocationAdapter</node>
+    <node x="1853.0" y="2005.0">org.springframework.util.AntPathStringMatcher</node>
+    <node x="1426.0" y="2080.0">org.springframework.util.comparator.CompoundComparator</node>
+    <node x="568.0" y="1305.0">org.springframework.util.ReflectionUtils</node>
+    <node x="1183.0" y="1540.0">org.springframework.util.WeakReferenceMonitor</node>
+    <node x="1464.0" y="2230.0">org.springframework.util.StringUtils</node>
+    <node x="799.0" y="2305.0">org.springframework.util.Assert</node>
+    <node x="250.0" y="1150.0">org.springframework.util.xml.StaxStreamContentHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.util.SimpleRouteMatcher" target="org.springframework.util.RouteMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="201.0" y="1360.0" />
+      <point x="157.5" y="1360.0" />
+      <point x="35.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.SoftEntryReference" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="47.5" y="-15.0" />
+      <point x="1230.0" y="490.0" />
+      <point x="1551.0" y="490.0" />
+      <point x="1551.0" y="365.0" />
+      <point x="900.7307692307693" y="365.0" />
+      <point x="117.23076923076928" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AutoPopulatingList.ElementFactory" target="org.springframework.util.AutoPopulatingList">
+      <point x="0.0" y="-15.0" />
+      <point x="612.0" y="1125.0" />
+      <point x="786.6666666666667" y="1125.0" />
+      <point x="-63.33333333333337" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher.AntPatternComparator.PatternInfo" target="org.springframework.util.AntPathMatcher.AntPatternComparator">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.SoftEntryReference" target="org.springframework.util.ConcurrentReferenceHashMap.Reference">
+      <point x="-47.5" y="-15.0" />
+      <point x="1135.0" y="490.0" />
+      <point x="813.0" y="490.0" />
+      <point x="29.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.ValuesIterator" target="org.springframework.util.LinkedCaseInsensitiveMap.EntryIterator">
+      <point x="-39.5" y="-15.0" />
+      <point x="395.54545454545456" y="740.0" />
+      <point x="346.22727272727275" y="740.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.ExponentialBackOff.ExponentialBackOffExecution" target="org.springframework.util.backoff.ExponentialBackOff">
+      <point x="65.5" y="-15.0" />
+      <point x="1209.5" y="970.0" />
+      <point x="1223.25" y="970.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.MonoToListenableFutureAdapter" target="org.springframework.util.concurrent.CompletableToListenableFutureAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventContentHandler" target="org.springframework.util.xml.AbstractStaxContentHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="115.0" y="1125.0" />
+      <point x="178.5" y="1125.0" />
+      <point x="-63.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedMultiValueMap" target="org.springframework.util.MultiValueMapAdapter">
+      <point x="49.5" y="-15.0" />
+      <point x="148.5" y="970.0" />
+      <point x="155.75" y="970.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.ReferenceManager" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="219.5" y="385.0" />
+      <point x="705.3461538461538" y="385.0" />
+      <point x="-78.15384615384619" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureAdapter" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="57.5" y="-15.0" />
+      <point x="1015.5454545454546" y="640.0" />
+      <point x="1347.7954545454545" y="640.0" />
+      <point x="-65.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.CollectionUtils.MultiValueMapAdapter" target="org.springframework.util.CollectionUtils">
+      <point x="51.5" y="-15.0" />
+      <point x="433.25" y="890.0" />
+      <point x="472.64285714285717" y="890.0" />
+      <point x="-41.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.SettableListenableFuture.SettableTask" target="org.springframework.util.concurrent.ListenableFutureTask">
+      <point x="35.500000000000114" y="-15.0" />
+      <point x="1722.6843434343436" y="725.0" />
+      <point x="1808.0454545454545" y="725.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.TaskOption" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="1477.5" y="375.0" />
+      <point x="881.1923076923077" y="375.0" />
+      <point x="97.69230769230774" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.FixedBackOff.FixedBackOffExecution" target="org.springframework.util.backoff.BackOffExecution">
+      <point x="53.5" y="-15.0" />
+      <point x="939.5" y="970.0" />
+      <point x="965.5" y="970.0" />
+      <point x="-43.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SystemPropertyUtils.SystemPropertyPlaceholderResolver" target="org.springframework.util.SystemPropertyUtils">
+      <point x="77.5" y="-15.0" />
+      <point x="1354.0" y="1205.0" />
+      <point x="1385.5" y="1205.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SimpleRouteMatcher.DefaultRoute" target="org.springframework.util.SimpleRouteMatcher">
+      <point x="35.5" y="-15.0" />
+      <point x="157.5" y="1440.0" />
+      <point x="201.0" y="1440.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.SettableListenableFuture" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-15.0" />
+      <point x="1566.0454545454545" y="650.0" />
+      <point x="1434.7954545454545" y="650.0" />
+      <point x="21.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.EntrySet" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="381.5" y="395.0" />
+      <point x="724.8846153846154" y="395.0" />
+      <point x="-58.61538461538464" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventXMLReader" target="org.springframework.util.xml.AbstractStaxXMLReader">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SocketUtils.SocketType" target="org.springframework.util.SocketUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.CollectionUtils.EnumerationIterator" target="org.springframework.util.CollectionUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="603.75" y="890.0" />
+      <point x="555.6428571428571" y="890.0" />
+      <point x="41.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.FutureAdapter.State" target="org.springframework.util.concurrent.FutureAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="780.0454545454546" y="650.0" />
+      <point x="802.7954545454546" y="650.0" />
+      <point x="-37.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SimpleRouteMatcher.DefaultRoute" target="org.springframework.util.RouteMatcher.Route">
+      <point x="-35.5" y="-15.0" />
+      <point x="86.5" y="1440.0" />
+      <point x="43.0" y="1440.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Entries" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="1237.5" y="395.0" />
+      <point x="842.1153846153846" y="395.0" />
+      <point x="58.61538461538464" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.EntryIterator" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.ReferenceType" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="1091.5" y="405.0" />
+      <point x="822.5769230769231" y="405.0" />
+      <point x="39.076923076923094" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventHandler.LocatorLocationAdapter" target="org.springframework.util.xml.StaxEventHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.DefaultPropertiesPersister" target="org.springframework.util.PropertiesPersister">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureCallbackRegistry.State" target="org.springframework.util.concurrent.ListenableFutureCallbackRegistry">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.PropertyPlaceholderHelper.PlaceholderResolver" target="org.springframework.util.PropertyPlaceholderHelper">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AutoPopulatingList.ReflectiveElementFactory" target="org.springframework.util.AutoPopulatingList">
+      <point x="59.5" y="-15.0" />
+      <point x="874.1" y="1205.0" />
+      <point x="999.5" y="1205.0" />
+      <point x="999.5" y="1125.0" />
+      <point x="913.3333333333335" y="1125.0" />
+      <point x="63.33333333333337" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureCallback" target="org.springframework.util.concurrent.FailureCallback">
+      <point x="59.5" y="-15.0" />
+      <point x="1746.5" y="1595.0" />
+      <point x="1780.0" y="1595.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxUtils.Jaxp14StaxHandler" target="org.springframework.util.xml.StaxUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Task" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="495.5" y="405.0" />
+      <point x="744.4230769230769" y="405.0" />
+      <point x="-39.076923076923094" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.FixedBackOff.FixedBackOffExecution" target="org.springframework.util.backoff.FixedBackOff">
+      <point x="-53.5" y="-15.0" />
+      <point x="832.5" y="970.0" />
+      <point x="818.75" y="970.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AutoPopulatingList.ElementInstantiationException" target="org.springframework.util.AutoPopulatingList">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.StreamUtils.NonClosingOutputStream" target="org.springframework.util.StreamUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="708.0" y="1595.0" />
+      <point x="793.5" y="1595.0" />
+      <point x="-33.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher.AntPathStringMatcher" target="org.springframework.util.AntPathMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="595.0" y="135.0" />
+      <point x="401.66666666666663" y="135.0" />
+      <point x="52.66666666666663" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.FixedBackOff" target="org.springframework.util.backoff.BackOff">
+      <point x="0.0" y="-15.0" />
+      <point x="818.75" y="890.0" />
+      <point x="995.5" y="890.0" />
+      <point x="-25.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.CollectionUtils.MultiValueMapAdapter" target="org.springframework.util.MultiValueMap">
+      <point x="-51.5" y="-15.0" />
+      <point x="330.25" y="890.0" />
+      <point x="205.75" y="890.0" />
+      <point x="50.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.XMLEventStreamReader" target="org.springframework.util.xml.AbstractXMLStreamReader">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.AbstractStaxXMLReader.StaxLocator" target="org.springframework.util.xml.AbstractStaxXMLReader">
+      <point x="0.0" y="-15.0" />
+      <point x="1858.25" y="970.0" />
+      <point x="1747.5833333333333" y="970.0" />
+      <point x="71.33333333333326" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ReflectionUtils.FieldCallback" target="org.springframework.util.ReflectionUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="732.0" y="1365.0" />
+      <point x="671.75" y="1365.0" />
+      <point x="20.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.FastByteArrayOutputStream.FastByteArrayInputStream" target="org.springframework.util.UpdateMessageDigestInputStream">
+      <point x="-59.5" y="-15.0" />
+      <point x="226.5" y="1595.0" />
+      <point x="143.0" y="1595.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AlternativeJdkIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-15.0" />
+      <point x="1153.0" y="1360.0" />
+      <point x="1342.3333333333333" y="1360.0" />
+      <point x="-44.66666666666674" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.MimeType.SpecificityComparator" target="org.springframework.util.MimeType">
+      <point x="53.5" y="-15.0" />
+      <point x="1647.5" y="1750.0" />
+      <point x="1621.5" y="1750.0" />
+      <point x="27.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.MimeTypeUtils.ConcurrentLruCache" target="org.springframework.util.MimeTypeUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.RouteMatcher.Route" target="org.springframework.util.RouteMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="43.0" y="1360.0" />
+      <point x="86.5" y="1360.0" />
+      <point x="-35.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.ValuesIterator" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="39.500000000000014" y="-15.0" />
+      <point x="474.54545454545456" y="740.0" />
+      <point x="545.7272727272727" y="740.0" />
+      <point x="545.7272727272727" y="650.0" />
+      <point x="414.22727272727275" y="650.0" />
+      <point x="68.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SystemPropertyUtils.SystemPropertyPlaceholderResolver" target="org.springframework.util.PropertyPlaceholderHelper.PlaceholderResolver">
+      <point x="-77.5" y="-15.0" />
+      <point x="1199.0" y="1205.0" />
+      <point x="1167.5" y="1205.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.WeakReferenceMonitor.MonitoringProcess" target="org.springframework.util.WeakReferenceMonitor">
+      <point x="0.0" y="-15.0" />
+      <point x="1189.0" y="1595.0" />
+      <point x="1234.5" y="1595.0" />
+      <point x="-51.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Restructure" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="929.5" y="415.0" />
+      <point x="803.0384615384615" y="415.0" />
+      <point x="19.538461538461547" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.EntrySet" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="0.0" y="-15.0" />
+      <point x="196.22727272727275" y="660.0" />
+      <point x="312.22727272727275" y="660.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.SimpleIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxStreamXMLReader" target="org.springframework.util.xml.AbstractStaxXMLReader">
+      <point x="0.0" y="-15.0" />
+      <point x="1462.25" y="970.0" />
+      <point x="1604.9166666666667" y="970.0" />
+      <point x="-71.33333333333326" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureAdapter" target="org.springframework.util.concurrent.FutureAdapter">
+      <point x="-57.5" y="-15.0" />
+      <point x="900.5454545454546" y="650.0" />
+      <point x="877.7954545454546" y="650.0" />
+      <point x="37.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher" target="org.springframework.util.PathMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AutoPopulatingList.ReflectiveElementFactory" target="org.springframework.util.AutoPopulatingList.ElementFactory">
+      <point x="-59.5" y="-15.0" />
+      <point x="755.1" y="1205.0" />
+      <point x="612.0" y="1205.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.StopWatch.TaskInfo" target="org.springframework.util.StopWatch">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.SettableListenableFuture.SettableTask" target="org.springframework.util.concurrent.SettableListenableFuture">
+      <point x="-35.499999999999886" y="-15.0" />
+      <point x="1651.6843434343436" y="725.0" />
+      <point x="1566.0454545454545" y="725.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureCallback" target="org.springframework.util.concurrent.SuccessCallback">
+      <point x="-59.5" y="-15.0" />
+      <point x="1627.5" y="1595.0" />
+      <point x="1594.0" y="1595.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.KeySet" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="0.0" y="-15.0" />
+      <point x="74.22727272727275" y="650.0" />
+      <point x="278.22727272727275" y="650.0" />
+      <point x="-68.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxStreamHandler" target="org.springframework.util.xml.AbstractStaxHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="1838.5" y="1125.0" />
+      <point x="1789.0" y="1125.0" />
+      <point x="49.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher.AntPatternComparator" target="org.springframework.util.AntPathMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="103.0" y="135.0" />
+      <point x="296.3333333333333" y="135.0" />
+      <point x="-52.666666666666686" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.CustomizableThreadCreator.SerializableMonitor" target="org.springframework.util.CustomizableThreadCreator">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.WeakReferenceMonitor.ReleaseListener" target="org.springframework.util.WeakReferenceMonitor">
+      <point x="0.0" y="-15.0" />
+      <point x="1383.0" y="1595.0" />
+      <point x="1337.5" y="1595.0" />
+      <point x="51.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.EntrySetIterator" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="-43.5" y="-15.0" />
+      <point x="43.5" y="740.0" />
+      <point x="16.727272727272748" y="740.0" />
+      <point x="16.727272727272748" y="640.0" />
+      <point x="244.22727272727275" y="640.0" />
+      <point x="-102.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.JdkIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-15.0" />
+      <point x="1577.0" y="1360.0" />
+      <point x="1431.6666666666667" y="1360.0" />
+      <point x="44.66666666666674" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ReflectionUtils.MethodFilter" target="org.springframework.util.ReflectionUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="412.00000000000006" y="1355.0" />
+      <point x="588.75" y="1355.0" />
+      <point x="-62.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.AbstractStaxXMLReader" target="org.springframework.util.xml.AbstractXMLReader">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.StreamUtils.NonClosingInputStream" target="org.springframework.util.StreamUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="946.0" y="1595.0" />
+      <point x="860.5" y="1595.0" />
+      <point x="33.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.CompletableToListenableFutureAdapter" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-15.0" />
+      <point x="1260.0454545454545" y="650.0" />
+      <point x="1391.2954545454545" y="650.0" />
+      <point x="-21.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureTask" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-15.0" />
+      <point x="1808.0454545454545" y="640.0" />
+      <point x="1478.2954545454545" y="640.0" />
+      <point x="65.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.FastByteArrayOutputStream.FastByteArrayInputStream" target="org.springframework.util.FastByteArrayOutputStream">
+      <point x="59.5" y="-15.0" />
+      <point x="345.5" y="1595.0" />
+      <point x="429.0" y="1595.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.EntrySetIterator" target="org.springframework.util.LinkedCaseInsensitiveMap.EntryIterator">
+      <point x="43.5" y="-15.0" />
+      <point x="130.5" y="740.0" />
+      <point x="296.22727272727275" y="740.0" />
+      <point x="-50.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ReflectionUtils.MethodCallback" target="org.springframework.util.ReflectionUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="906.0" y="1355.0" />
+      <point x="713.25" y="1355.0" />
+      <point x="62.25" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Segment" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="61.5" y="375.0" />
+      <point x="685.8076923076923" y="375.0" />
+      <point x="-97.69230769230774" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.Values" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="0.0" y="-15.0" />
+      <point x="488.22727272727275" y="660.0" />
+      <point x="380.22727272727275" y="660.0" />
+      <point x="34.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxStreamContentHandler" target="org.springframework.util.xml.AbstractStaxContentHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="369.0" y="1125.0" />
+      <point x="305.5" y="1125.0" />
+      <point x="63.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher.PathSeparatorPatternCache" target="org.springframework.util.AntPathMatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Reference" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ReflectionUtils.FieldFilter" target="org.springframework.util.ReflectionUtils">
+      <point x="0.0" y="-15.0" />
+      <point x="570.0" y="1365.0" />
+      <point x="630.25" y="1365.0" />
+      <point x="-20.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.EntryIterator" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="629.5" y="415.0" />
+      <point x="763.9615384615385" y="415.0" />
+      <point x="-19.538461538461547" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedMultiValueMap" target="org.springframework.util.MultiValueMap">
+      <point x="-49.5" y="-15.0" />
+      <point x="49.5" y="970.0" />
+      <point x="42.25" y="970.0" />
+      <point x="42.25" y="890.0" />
+      <point x="105.75" y="890.0" />
+      <point x="-50.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ExceptionTypeFilter" target="org.springframework.util.InstanceFilter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventContentHandler.LocatorLocationAdapter" target="org.springframework.util.xml.StaxEventContentHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.ExponentialBackOff.ExponentialBackOffExecution" target="org.springframework.util.backoff.BackOffExecution">
+      <point x="-65.5" y="-15.0" />
+      <point x="1078.5" y="970.0" />
+      <point x="1052.5" y="970.0" />
+      <point x="43.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.KeySetIterator" target="org.springframework.util.LinkedCaseInsensitiveMap.EntryIterator">
+      <point x="-39.5" y="-15.0" />
+      <point x="573.5454545454545" y="730.0" />
+      <point x="396.22727272727275" y="730.0" />
+      <point x="50.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.WeakEntryReference" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="-47.5" y="-15.0" />
+      <point x="330.0" y="490.0" />
+      <point x="0.0" y="490.0" />
+      <point x="0.0" y="365.0" />
+      <point x="666.2692307692307" y="365.0" />
+      <point x="-117.23076923076928" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.ListBasedXMLEventReader" target="org.springframework.util.xml.AbstractXMLEventReader">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.backoff.ExponentialBackOff" target="org.springframework.util.backoff.BackOff">
+      <point x="0.0" y="-15.0" />
+      <point x="1223.25" y="890.0" />
+      <point x="1046.5" y="890.0" />
+      <point x="25.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.WeakEntryReference" target="org.springframework.util.ConcurrentReferenceHashMap.Reference">
+      <point x="47.5" y="-15.0" />
+      <point x="425.0" y="490.0" />
+      <point x="754.0" y="490.0" />
+      <point x="-29.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventHandler" target="org.springframework.util.xml.AbstractStaxHandler">
+      <point x="0.0" y="-15.0" />
+      <point x="1640.5" y="1125.0" />
+      <point x="1690.0" y="1125.0" />
+      <point x="-49.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedCaseInsensitiveMap.KeySetIterator" target="org.springframework.util.LinkedCaseInsensitiveMap">
+      <point x="39.5" y="-15.0" />
+      <point x="652.5454545454545" y="640.0" />
+      <point x="448.22727272727275" y="640.0" />
+      <point x="102.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.ConcurrentReferenceHashMap.Entry" target="org.springframework.util.ConcurrentReferenceHashMap">
+      <point x="0.0" y="-15.0" />
+      <point x="1351.5" y="385.0" />
+      <point x="861.6538461538462" y="385.0" />
+      <point x="78.15384615384619" y="15.0" />
+    </edge>
+    <edge source="org.springframework.util.MultiValueMapAdapter" target="org.springframework.util.MultiValueMap">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7451737451737452" x="1599.0188832409876" y="751.8707386813367" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
