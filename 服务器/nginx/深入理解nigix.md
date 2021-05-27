@@ -1,11 +1,5 @@
 # 《深入理解Nginx》
 
-
-
-
-
-
-
 ## 修改Linux配置
 
 ```shell
@@ -227,8 +221,6 @@ server {
 proxy_method method;
 #
 ```
-
-
 
 ## 问题点:
 

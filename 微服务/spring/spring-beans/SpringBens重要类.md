@@ -1,7 +1,7 @@
 - PropertyEditorRegistry
-  - PropertyAccessor
-  - TypeConverter
-  - ConfigurablePropertyAccessor
+    - PropertyAccessor
+    - TypeConverter
+    - ConfigurablePropertyAccessor
 
 - PropertyEditor
 - PropertyAccessorUtils

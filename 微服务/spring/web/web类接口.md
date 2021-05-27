@@ -1,7 +1,5 @@
 [TOC]
 
-
-
 # Http
 
 - HttpMessage:star:
@@ -71,7 +69,7 @@
 
 - CorsUtils
 
-## Method 
+## Method
 
 - HandlerMethodArgumentResolver
 
@@ -104,7 +102,7 @@
 - WebDataBinder
 - WebDataBinderFactory
 
-## Filter 
+## Filter
 
 - GenericFilterBean
     - OncePerRequestFilter

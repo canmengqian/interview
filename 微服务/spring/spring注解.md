@@ -30,7 +30,8 @@
 | @EnableScheduling               | 注解在配置类上，开启对计划任务的支持。                       |
 | @Scheduled                      | 注解在方法上，声明该方法是计划任务。支持多种类型的计划任务：cron,fixDelay,fixRate |
 | @Conditional                    | 根据满足某一特定条件创建特定的Bean                           |
-| @Enable*                        | 通过简单的@Enable*来开启一项功能的支持。所有@Enable*注解都有一个@Import注解，@Import是用来导入配置类的，这也就意味着这些自动开启的实现其实是导入了一些自动配置的Bean(1.直接导入配置类2.依据条件选择配置类3.动态注册配置类) |
+| @Enable*                        | 通过简单的@Enable*
+来开启一项功能的支持。所有@Enable*注解都有一个@Import注解，@Import是用来导入配置类的，这也就意味着这些自动开启的实现其实是导入了一些自动配置的Bean(1.直接导入配置类2.依据条件选择配置类3.动态注册配置类) |
 | @RunWith                        | 这个是Junit的注解，springboot集成了junit。一般在测试类里使用:@RunWith(SpringJUnit4ClassRunner.class) — SpringJUnit4ClassRunner在JUnit环境下提供Sprng TestContext Framework的功能 |
 | @ContextConfiguration           | 用来加载配置ApplicationContext，其中classes属性用来加载配置类:@ContextConfiguration(classes = {TestConfig.class(自定义的一个配置类)}) |
 | @ActiveProfiles                 | 用来声明活动的profile–@ActiveProfiles(“prod”(这个prod定义在配置类中)) |

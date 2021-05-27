@@ -1,12 +1,8 @@
 - @Order注解的使用
 - Spring如何在方法中实现注入
-- WebMvcConfigurer  这个类如何使用
+- WebMvcConfigurer 这个类如何使用
 - WebMvcConfigurerAdapter已不推荐使用，使用接口WebMvcConfigurer？
 - WebRequestInterceptor
 - MessageSource
 - LocaleContextHolder
-- RegistrationBean
-      - ServletContextInitializer 和 ServletContext
-          - InterceptorRegistry
-          - LocaleResolver
-          - Aware接口
+- RegistrationBean - ServletContextInitializer 和 ServletContext - InterceptorRegistry - LocaleResolver - Aware接口
