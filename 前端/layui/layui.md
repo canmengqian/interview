@@ -1,14 +1,12 @@
 [TOC]
 
-
-
 ## 语法
 
 - 组件如何更改属性
 
 - 事件触发几种方式
-  - id，class
-  - 过滤器
+    - id，class
+    - 过滤器
 
 ## 表格
 
@@ -23,16 +21,16 @@
 - [layui input标签 type=number 输入整数/小数](https://blog.csdn.net/only_neo/article/details/88311334)
 - [layui怎么刷新当前页面？](https://www.html.cn/framework/layui/18599.html)
 - 下拉框初始化赋值
-  - [初始化代码中拉框值并](https://www.yunbook.vip/post/b8069d67f64a.html)
+    - [初始化代码中拉框值并](https://www.yunbook.vip/post/b8069d67f64a.html)
 - 表单带附件提交
 
 ### 弹出窗口
 
 - 父子窗口,窗口定时关闭
-  - 父窗口向子窗口属性填值,子窗口向父窗口属性填值,
-    - [layui弹窗间的传值（layui弹出层传值）(窗口传值)](https://blog.csdn.net/asdfghjkl110292/article/details/89012727?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
-    - [详解layui弹窗父子窗口之间传参数的方法](http://www.hechaku.com/arcitle/20189928.html)
-  - 父窗口向子窗口批量填值,子窗口向父窗口批量填值,
+    - 父窗口向子窗口属性填值,子窗口向父窗口属性填值,
+        - [layui弹窗间的传值（layui弹出层传值）(窗口传值)](https://blog.csdn.net/asdfghjkl110292/article/details/89012727?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
+        - [详解layui弹窗父子窗口之间传参数的方法](http://www.hechaku.com/arcitle/20189928.html)
+    - 父窗口向子窗口批量填值,子窗口向父窗口批量填值,
 - [Layui Layer在open弹出层中异步加载数据和form表单radio、checkbox、select不渲染，不可点击的解决办法](https://blog.csdn.net/qq_34873338/article/details/78726167)
 
 ### 其他组件
@@ -44,9 +42,9 @@
 
 - [layui表单必填项带*样式](https://blog.csdn.net/qq_24562495/article/details/104516722)
 - 项目搭建方式
-  - 模块引用 ，自带模块都有哪些?
-  - 扩展组件
-  - 路径引用问题,重要
+    - 模块引用 ，自带模块都有哪些?
+    - 扩展组件
+    - 路径引用问题,重要
 
 ## 常用方法
 
@@ -67,20 +65,21 @@
 |                                          |                                                              |          |
 |                                          |                                                              |          |
 
-​	
+​
 
 ```javascript
 form.render(); //更新全部
 form.render('select'); //刷新select选择框渲染
 ```
 
-问题 
+问题
 
 - 为什么表单不显示？
-  - 当你使用表单时，layui 会对 select、checkbox、radio 等原始元素隐藏，从而进行美化修饰处理。但这需要依赖于 form 组件，所以你必须加载 *form*，并且执行一个实例。[#详见说明](https://www.layui.com/doc/modules/form.html#render)
-  - 同理的还有 [element 模块](https://www.layui.com/doc/modules/element.html#render)
+    - 当你使用表单时，layui 会对 select、checkbox、radio 等原始元素隐藏，从而进行美化修饰处理。但这需要依赖于 form 组件，所以你必须加载 *form*
+      ，并且执行一个实例。[#详见说明](https://www.layui.com/doc/modules/form.html#render)
+    - 同理的还有 [element 模块](https://www.layui.com/doc/modules/element.html#render)
 
 - 查询索引
-  - layer.getChildFrame(selector, index) - 获取iframe页的DOM
+    - layer.getChildFrame(selector, index) - 获取iframe页的DOM
 - 遍历each
 

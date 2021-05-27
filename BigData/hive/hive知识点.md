@@ -106,7 +106,8 @@ LOCATION '/path/to/data';
 
 #### 内部表和外部表的区别
 
-​	Hive默认情况下会将这些表的数据存储在由配置项hive.metastore.warehouse.dir（例如，/user/hive/warehouse）所定义的目录的子目录下。当我们删除一个管理表时，Hive也**会删除这个表中数据**。表是外部的，所以H**ive并非认为其完全拥有这份数据**。因此，删除该表并不会删除掉这份数据，不过描述表的**元数据信息**会被删除掉
+​ Hive默认情况下会将这些表的数据存储在由配置项hive.metastore.warehouse.dir（例如，/user/hive/warehouse）所定义的目录的子目录下。当我们删除一个管理表时，Hive也**
+会删除这个表中数据**。表是外部的，所以H**ive并非认为其完全拥有这份数据**。因此，删除该表并不会删除掉这份数据，不过描述表的**元数据信息**会被删除掉
 
 ### 表信息查询
 
@@ -216,7 +217,7 @@ WHERE se.state = 'CA';
 - 对hive属性进行调优
 
   | 属性                                 |                                    |
-  | ------------------------------------ | ---------------------------------- |
+    | ------------------------------------ | ---------------------------------- |
   | hive.limit.optimize.enable           |                                    |
   | hive.limit.row.max.size              |                                    |
   | hive.limit.optimize.limit.file       |                                    |
@@ -227,7 +228,6 @@ WHERE se.state = 'CA';
   | mapred.job.reuse.jvm.num.tasks       | 用于小文件的场景或task特别多的场景 |
   | hive.exec.compress. intermediate     | 开启中间压缩                       |
 
-  
 
 - JVM属性调优
 
@@ -235,4 +235,5 @@ WHERE se.state = 'CA';
 
 - 多表关联下,对join进行优化
 
-  ​	如果所有表中有一个**表足够得小**，是可以完成载入到内存中的，那么这时Hive可以执行一个**map-side JOIN**，这样可以减少reduce过程，有时甚至可以减少某些**map task任务**。有时候即使某些表不适合载入内存也可以使用mapJOIN，因为减少reduce阶段可能比将不太大的表分发到每个map task中会带来更多的好处。
+  ​ 如果所有表中有一个**表足够得小**，是可以完成载入到内存中的，那么这时Hive可以执行一个**map-side JOIN**，这样可以减少reduce过程，有时甚至可以减少某些**map task任务**
+  。有时候即使某些表不适合载入内存也可以使用mapJOIN，因为减少reduce阶段可能比将不太大的表分发到每个map task中会带来更多的好处。

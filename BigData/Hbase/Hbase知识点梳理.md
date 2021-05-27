@@ -4,12 +4,12 @@
 
 ### Hbase使用场景
 
-- 数据分析是HBase的弱项， 因为对于HBase乃至整个NoSQL生态圈来说， 基本上都是不支持表关联的。  
+- 数据分析是HBase的弱项， 因为对于HBase乃至整个NoSQL生态圈来说， 基本上都是不支持表关联的。
 - 单表数据量超千万， 而且并发还挺高。
 
 ### Hbase架构
 
-#### Master服务器和RegionServer服务器  
+#### Master服务器和RegionServer服务器
 
 #### 什么是Region,行,列族,列，cell
 
@@ -23,15 +23,15 @@
 
 ##### BlockCache是什么
 
-##### HFile之前已经被存储到HDFS一次了， 为什么还需要被放入Memstore  
+##### HFile之前已经被存储到HDFS一次了， 为什么还需要被放入Memstore
 
 ##### 什么是LSM树
 
 ##### HFIle的存储结构
 
 - HFile- Data数据结构
-- BlockType  包含哪些类型
-- KeyValue类  数据结构
+- BlockType 包含哪些类型
+- KeyValue类 数据结构
 
 ### Hbase数据读写
 

@@ -2,83 +2,113 @@
 select e.empno,
        e.ename,
        case
-         when e.sal >= 1000 and e.sal <= 2000 then
-          1
-         else
-          2
-       end  as levelc,
+           when e.sal >= 1000 and e.sal <= 2000 then
+               1
+           else
+               2
+           end as levelc,
        e.sal
-  from emp e order by levelc asc , e.sal asc ;
+from emp e
+order by levelc asc, e.sal asc;
 
--- 2.7 Ğ´·¨2
+-- 2.7 Ğ´ï¿½ï¿½2
 select e.empno,
        e.ename,
        e.sal
-  from emp e order by case
- when e.sal >= 1000 and e.sal <= 2000 then 1 else 2 end asc, e.sal asc;
- 
- -- 
- DROP TABLE emp2 PURGE;
- Create Table emp2 AS 
- select ename , job , sal ,comm from emp where job = 'CLERK'
- 
- explain Plan for select e.* from emp e where e.ename in( select ename from emp2);
- --select e.* from emp e where e.ename exists ( select ename from emp2);
- select * from table(dbms_xplan.display)
- -- 3.13
- select e.ename,e.comm from emp e where coalesce(e.comm,0) < (select comm from emp where ename='ALLEN');
-  -- TODO
- update emp set deptno = null where empno = 7788;commit;
- select d.* from dept d where d.deptno not in (select deptno from emp where deptno is not null);
- 
- --6.2
- select e.empno, e.ename,sum(e.sal) over (order by e.sal) from emp e ;
- select e.deptno as deptno , e.empno as empno, e.ename as ename ,e.sal as sal, sum(e.sal) over(order by sal asc ) as gsum from emp e where e.deptno=10
- union all 
- -- °´ÕÕ²¿ÃÅµÄÔ±¹¤½øĞĞ¹¤×ÊÀÛ¼Ó
- select e.deptno as deptno ,0 as empno, '--' as ename,sum(e.sal) as sal, 0 as gsum  from emp e group by e.deptno
- union all
- select -1 as deptno,-1 as empno, '--' as ename,sum(e.sal) as sal, 0 as gsum  from emp e
- --listaggĞ´·¨
- select e.deptno as deptno,
-        e.empno as empno,
-        e.ename as ename,
-        e.sal as sal,
-        sum(e.sal) over(order by sal asc) as gsum,
-        (select listagg(sal,'+') within group(order by empno) from emp a where a.deptno = 10 and a.empno<=e.empno ) as ¼ÆËã¹«Ê½
-   from emp e
-  where e.deptno = 10 order by e.empno 
- 
- --6.5 ÅÅÃû
- select e.deptno as deptno,
-        e.empno as empno,
-        e.ename as ename,
-        e.sal as sal,
-        row_number() over(partition by e.deptno order by e.sal) as row_num,
-        rank() over(partition by e.deptno order by e.sal) as rank_w,
-        dense_rank() over(partition by e.deptno order by e.sal) as denserank
-   from emp e
-   order by deptno 
--- 6.6
-select e.sal,count(*) as cnt from emp e group by sal;      
+from emp e
+order by case
+             when e.sal >= 1000 and e.sal <= 2000 then 1
+             else 2 end asc, e.sal asc;
 
--- 6.7 ¸÷²¿ÃÅ¹¤×Ê×î¸ß×îµÍµÄÈË
+--
+DROP TABLE emp2 PURGE;
+Create Table emp2 AS
+select ename, job, sal, comm
+from emp
+where job = 'CLERK' explain Plan for
+select e.*
+from emp e
+where e.ename in (select ename from emp2);
+--select e.* from emp e where e.ename exists ( select ename from emp2);
+select *
+from table(dbms_xplan.display)
+-- 3.13
+select e.ename, e.comm
+from emp e
+where coalesce(e.comm, 0) < (select comm from emp where ename = 'ALLEN');
+-- TODO
+update emp
+set deptno = null
+where empno = 7788;
+commit;
+select d.*
+from dept d
+where d.deptno not in (select deptno from emp where deptno is not null);
+
+--6.2
+select e.empno, e.ename, sum(e.sal) over (order by e.sal)
+from emp e;
+select e.deptno as deptno,
+       e.empno  as empno,
+       e.ename  as ename,
+       e.sal    as sal,
+       sum(e.sal)  over(order by sal asc ) as gsum
+from emp e
+where e.deptno = 10
+union all
+-- ï¿½ï¿½ï¿½Õ²ï¿½ï¿½Åµï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¹ï¿½ï¿½ï¿½ï¿½Û¼ï¿½
+select e.deptno as deptno, 0 as empno, '--' as ename, sum(e.sal) as sal, 0 as gsum
+from emp e
+group by e.deptno
+union all
+select -1 as deptno, -1 as empno, '--' as ename, sum(e.sal) as sal, 0 as gsum
+from emp e
+--listaggĞ´ï¿½ï¿½
+select e.deptno as deptno,
+       e.empno  as empno,
+       e.ename  as ename,
+       e.sal    as sal,
+       sum(e.sal)  over(order by sal asc) as gsum,
+       (select listagg(sal, '+') within
+group (order by empno)
+from emp a
+where a.deptno = 10 and a.empno<=e.empno ) as ï¿½ï¿½ï¿½ã¹«Ê½
+from emp e
+where e.deptno = 10
+order by e.empno
+
+--6.5 ï¿½ï¿½ï¿½ï¿½
+select e.deptno as  deptno,
+       e.empno  as  empno,
+       e.ename  as  ename,
+       e.sal    as  sal,
+       row_number() over(partition by e.deptno order by e.sal) as row_num,
+       rank()       over(partition by e.deptno order by e.sal) as rank_w,
+       dense_rank() over(partition by e.deptno order by e.sal) as denserank
+from emp e
+order by deptno
+-- 6.6
+select e.sal, count(*) as cnt
+from emp e
+group by sal;
+
+-- 6.7 ï¿½ï¿½ï¿½ï¿½ï¿½Å¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½
 select e.deptno,
-       max(e.ename) keep(dense_rank first order by sal) over(partition by e.deptno) as Ğ½×Ê×îµÍµÄÈË,
-       max(e.sal) keep(dense_rank first order by sal) over(partition by e.deptno) as ×îµÍĞ½×Ê,
-       max(e.ename) keep(dense_rank last order by sal) over(partition by e.deptno) as Ğ½×Ê×î¸ßµÄÈË,
-       max(e.sal) keep(dense_rank last order by sal) over(partition by e.deptno) as ×î¸ßĞ½×Ê,
+       max(e.ename) keep(dense_rank first order by sal) over(partition by e.deptno) as Ğ½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½,
+       max(e.sal) keep(dense_rank first order by sal) over(partition by e.deptno) as ï¿½ï¿½ï¿½Ğ½ï¿½ï¿½,
+       max(e.ename) keep(dense_rank last order by sal) over(partition by e.deptno) as Ğ½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½,
+       max(e.sal) keep(dense_rank last order by sal) over(partition by e.deptno) as ï¿½ï¿½ï¿½Ğ½ï¿½ï¿½,
        e.ename,
        e.sal
-  from emp e;
+from emp e;
 
 -- 7.4
-select  a.maxDay-a.minDay as ¼ä¸ôÈÕ,
-       months_between(a.maxDay,a.minDay) as ¼ä¸ôÔÂ,
-       months_between(a.maxDay,a.minDay)/12 as ¼ä¸ôÄê
+select a.maxDay - a.minDay as ï¿½ï¿½ï¿½ï¿½ï¿½,
+       months_between(a.maxDay,a.minDay) as ï¿½ï¿½ï¿½ï¿½ï¿½,
+       months_between(a.maxDay,a.minDay)/12 as ï¿½ï¿½ï¿½ï¿½ï¿½
 from (
-select  max(e.HIREDATE) as maxDay, min(e.HIREDATE) as minDay from EMP  e
-) a;
+    select max (e.HIREDATE) as maxDay, min (e.HIREDATE) as minDay from EMP e
+    ) a;
 
 -- 7.7
 select x.EMPNO,
@@ -92,34 +122,37 @@ from (
                 e.ENAME,
                 e.HIREDATE,
                 lead(e.HIREDATE) over (order by e.HIREDATE) as next_hd,
-                lag(e.HIREDATE) over (order by e.HIREDATE)  as pre_hd
+                lag(e.HIREDATE)  over (order by e.HIREDATE)  as pre_hd
          from EMP e
          where e.DEPTNO = 10
      ) x;
--- 8.1 »ñÈ¡ÔÂ³õ
-select HIREDATE , trunc(HIREDATE ,'mm') as ÔÂ³õ from EMP where ROWNUM<=1;
+-- 8.1 ï¿½ï¿½È¡ï¿½Â³ï¿½
+select HIREDATE, trunc(HIREDATE, 'mm') as ï¿½Â³ï¿½
+from EMP
+where ROWNUM<=1;
 
-select HIREDATE ,
-       to_char(HIREDATE,'hh24') Ê±,
-       to_char(HIREDATE,'mi') ·Ö,
-        to_char(HIREDATE,'ss') Ãë,
-        to_char(HIREDATE,'dd') ÈÕ,
-        to_char(HIREDATE,'mm') ÔÂ,
-        to_char(HIREDATE,'yyyy') Äê,
-        to_char(HIREDATE,'ddd') ÄêÄÚµÚ¼¸Ìì,
-       trunc(HIREDATE,'dd') Ò»ÌìÖ®Ê¼,
-        trunc(HIREDATE,'day') ÖÜ³õ,
-       trunc(HIREDATE,'mm') ÔÂ³õ,
-       last_day(HIREDATE) ÔÂÄ©,
-       add_months(trunc(HIREDATE,'mm'),1) ÏÂÔÂ³õ,
-       trunc(HIREDATE,'yy') Äê³õ,
-       to_char(HIREDATE,'day') ÖÜ¼¸,
-       to_char(HIREDATE,'month') ÔÂ·İ
-       from EMP where ROWNUM<=1;
--- »ñÈ¡È«ÄêµÄÔÂ³õ,ÔÂÄ©
+select HIREDATE,
+       to_char(HIREDATE, 'hh24') Ê±,
+       to_char(HIREDATE, 'mi') ï¿½ï¿½,
+        to_char(HIREDATE,'ss') ï¿½ï¿½,
+        to_char(HIREDATE,'dd') ï¿½ï¿½,
+        to_char(HIREDATE,'mm') ï¿½ï¿½,
+        to_char(HIREDATE,'yyyy') ï¿½ï¿½,
+        to_char(HIREDATE,'ddd') ï¿½ï¿½ï¿½ÚµÚ¼ï¿½ï¿½ï¿½,
+       trunc(HIREDATE,'dd') Ò»ï¿½ï¿½Ö®Ê¼,
+        trunc(HIREDATE,'day') ï¿½Ü³ï¿½,
+       trunc(HIREDATE,'mm') ï¿½Â³ï¿½,
+       last_day(HIREDATE) ï¿½ï¿½Ä©,
+       add_months(trunc(HIREDATE,'mm'),1) ï¿½ï¿½ï¿½Â³ï¿½,
+       trunc(HIREDATE,'yy') ï¿½ï¿½ï¿½,
+       to_char(HIREDATE,'day') ï¿½Ü¼ï¿½,
+       to_char(HIREDATE,'month') ï¿½Â·ï¿½
+from EMP
+where ROWNUM<=1;
+-- ï¿½ï¿½È¡È«ï¿½ï¿½ï¿½ï¿½Â³ï¿½,ï¿½ï¿½Ä©
 -- 8.3
 select HIREDATE,
-       extract(YEAR from HIREDATE)            as year,
+       extract(YEAR from HIREDATE) as year,
        extract(MONTH from HIREDATE)           as month,
        extract(DAY from HIREDATE)             as day
       -- extract(hour from HIREDATE)            as hour
@@ -128,18 +161,18 @@ from EMP
 where ROWNUM <= 3;
 
 -- 8.11
--- Äê·İÁ¬ĞøÀÛ¼Ó
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û¼ï¿½
 with x as (select minYear + LEVEL - 1 as years
            from (
                     select max(extract(year from HIREDATE)) as maxYear,
                            min(extract(year from HIREDATE)) as minYear
                     from EMP
                 )
-           connect by LEVEL <= maxYear - minYear)
-select e.HIREDATE , count(e.ENAME) as cnt
+connect by LEVEL <= maxYear - minYear)
+select e.HIREDATE, count(e.ENAME) as cnt
 from x
          right join
-        EMP  e on x.years = EXTRACT(YEAR  from e.HIREDATE)
+     EMP e on x.years = EXTRACT(YEAR from e.HIREDATE)
 group by e.hiredate
 order by x.years desc;
 
@@ -156,6 +189,7 @@ where EMPNO in (
 );
 select EMPNO
 from (
-         select EMPNO, MAX(EMPNO) over () as maxNo, min(EMPNO) over () as minNo from EMP
+         select EMPNO, MAX(EMPNO) over () as maxNo, min(EMPNO) over () as minNo
+         from EMP
      ) x
 where EMPNO in (maxNo, minNo);

@@ -2,8 +2,6 @@
 
 [TOC]
 
-
-
 ### Java8新特性
 
 1. `Lambda 表达式` − Lambda 允许把函数作为一个方法的参数（函数作为参数传递到方法中）。
@@ -18,7 +16,7 @@
 
 - 语法规则
 
-  - ```java
+    - ```java
     (parameters) -> expression
     或
     (parameters) ->{ statements; }
@@ -32,8 +30,8 @@
     ```
 
 - 变量作用域
-  
-  - lambda 表达式只能引用标记了 final 的外层局部变量，不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误
+
+    - lambda 表达式只能引用标记了 final 的外层局部变量，不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误
 
 ### 函数式接口
 

@@ -53,18 +53,18 @@
 | ResourceLeakDetector                  | 内存泄露探测器                                               |      |
 | ReferenceCountUtil                    |                                                              |      |
 
-## Channel、 EventLoop、 Thread 以及 EventLoopGroup 之间的关系  
+## Channel、 EventLoop、 Thread 以及 EventLoopGroup 之间的关系
 
 1. 一个 EventLoopGroup 包含一个或者多个 EventLoop；
 2. 一个 EventLoop 在它的生命周期内只和一个 Thread 绑定，所有由 EventLoop 处理的 I/O 事件都将在它专有的 Thread 上被处理
 3. 一个 Channel 在它的生命周期内只注册于一个 EventLoop；一个 EventLoop 可能会被分配给一个或多个 Channel。
 
-## 客户端（Bootstrap）和ServerBootstrap的区别  
+## 客户端（Bootstrap）和ServerBootstrap的区别
 
 ## Netty所提供的IO模型？
 
 ### ChannelPipeline的用途？
 
-- 移除或者替换ChannelPipeline  中的ChannelHandler  
+- 移除或者替换ChannelPipeline 中的ChannelHandler
 
 ### JDK调度线程池的缺陷和Netty如何使用调度？

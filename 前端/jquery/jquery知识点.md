@@ -6,7 +6,7 @@
 
 - window.onload与$(document).ready()的对比
 - DOM对象和Jquery对象
-  - jQuery对象转成DOM对象
+    - jQuery对象转成DOM对象
 - $("#ID")用来代替document.getElementById()
 
 ## 选择器
@@ -21,8 +21,6 @@
 | 群组选择器 |      |      |
 | 后代选择器 |      |      |
 | 通配符     |      |      |
-
-
 
 ## 样式处理
 

@@ -2,8 +2,6 @@
 
 [TOC]
 
-
-
 ### 基本术语
 
 | SQL术语/概念 | MongoDB术语/概念 | 解释/说明                           |
@@ -35,7 +33,7 @@ portX 可选的指定端口，如果不填，默认为27017
 
 ### Mongo数据类型
 
-- **ObjectId** 
+- **ObjectId**
 
     ```sql
     /**ObjectId 是一个12字节 BSON 类型数据，有以下格式：
@@ -55,25 +53,23 @@ portX 可选的指定端口，如果不填，默认为27017
 
 - **基本数据类型**
 
-    | 数据类型           | 描述                                                         |
-    | ------------------ | ------------------------------------------------------------ |
-    | String             | 字符串。存储数据常用的数据类型。在 MongoDB 中，UTF-8 编码的字符串才是合法的。 |
-    | Integer            | 整型数值。用于存储数值。根据你所采用的服务器，可分为 32 位或 64 位。 |
-    | Boolean            | 布尔值。用于存储布尔值（真/假）。                            |
-    | Double             | 双精度浮点值。用于存储浮点值。                               |
-    | Min/Max keys       | 将一个值与 BSON（二进制的 JSON）元素的最低值和最高值相对比。 |
-    | Array              | 用于将数组或列表或多个值存储为一个键。                       |
-    | Timestamp          | 时间戳。记录文档修改或添加的具体时间。                       |
-    | Object             | 用于内嵌文档。                                               |
-    | Null               | 用于创建空值。                                               |
-    | Symbol             | 符号。该数据类型基本上等同于字符串类型，但不同的是，它一般用于采用特殊符号类型的语言。 |
-    | Date               | 日期时间。用 UNIX 时间格式来存储当前日期或时间。你可以指定自己的日期时间：创建 Date 对象，传入年月日信息。 |
-    | Object ID          | 对象 ID。用于创建文档的 ID。                                 |
-    | Binary Data        | 二进制数据。用于存储二进制数据。                             |
-    | Code               | 代码类型。用于在文档中存储 JavaScript 代码。                 |
-    | Regular expression | 正则表达式类型。用于存储正则表达式。                         |
-
-    
+  | 数据类型           | 描述                                                         |
+      | ------------------ | ------------------------------------------------------------ |
+  | String             | 字符串。存储数据常用的数据类型。在 MongoDB 中，UTF-8 编码的字符串才是合法的。 |
+  | Integer            | 整型数值。用于存储数值。根据你所采用的服务器，可分为 32 位或 64 位。 |
+  | Boolean            | 布尔值。用于存储布尔值（真/假）。                            |
+  | Double             | 双精度浮点值。用于存储浮点值。                               |
+  | Min/Max keys       | 将一个值与 BSON（二进制的 JSON）元素的最低值和最高值相对比。 |
+  | Array              | 用于将数组或列表或多个值存储为一个键。                       |
+  | Timestamp          | 时间戳。记录文档修改或添加的具体时间。                       |
+  | Object             | 用于内嵌文档。                                               |
+  | Null               | 用于创建空值。                                               |
+  | Symbol             | 符号。该数据类型基本上等同于字符串类型，但不同的是，它一般用于采用特殊符号类型的语言。 |
+  | Date               | 日期时间。用 UNIX 时间格式来存储当前日期或时间。你可以指定自己的日期时间：创建 Date 对象，传入年月日信息。 |
+  | Object ID          | 对象 ID。用于创建文档的 ID。                                 |
+  | Binary Data        | 二进制数据。用于存储二进制数据。                             |
+  | Code               | 代码类型。用于在文档中存储 JavaScript 代码。                 |
+  | Regular expression | 正则表达式类型。用于存储正则表达式。                         |
 
 ### 常用命令
 
@@ -90,7 +86,7 @@ portX 可选的指定端口，如果不填，默认为27017
     db.DB_NAME.insert({"name":"菜鸟教程"})
     ```
 
-- #####   集合操作
+- ##### 集合操作
 
     - **创建集合**
 
@@ -119,11 +115,11 @@ portX 可选的指定端口，如果不填，默认为27017
             4. 用户创建的集合名字不能含有`保留字符`。有些驱动程序的确支持在集合名里面包含，这是因为某些系统生成的集合中包含该字符。除非你要访问这种系统创建的集合，否则千万不要在名字里出现$。
             ```
 
-        - 
+        -
 
     - show collections / show tables 查看集合
 
-    - db.TABLE_NAME.drop() 
+    - db.TABLE_NAME.drop()
 
     - **插入集合**
 
@@ -212,13 +208,13 @@ portX 可选的指定端口，如果不填，默认为27017
     - **条件查询**
 
         - | 操作       | 格式                     | 范例                                        | RDBMS中的类似语句       |
-            | ---------- | ------------------------ | ------------------------------------------- | ----------------------- |
-            | 等于       | `{<key>:<value>`}        | `db.col.find({"by":"菜鸟教程"}).pretty()`   | `where by = '菜鸟教程'` |
-            | 小于       | `{<key>:{$lt:<value>}}`  | `db.col.find({"likes":{$lt:50}}).pretty()`  | `where likes < 50`      |
-            | 小于或等于 | `{<key>:{$lte:<value>}}` | `db.col.find({"likes":{$lte:50}}).pretty()` | `where likes <= 50`     |
-            | 大于       | `{<key>:{$gt:<value>}}`  | `db.col.find({"likes":{$gt:50}}).pretty()`  | `where likes > 50`      |
-            | 大于或等于 | `{<key>:{$gte:<value>}}` | `db.col.find({"likes":{$gte:50}}).pretty()` | `where likes >= 50`     |
-            | 不等于     | `{<key>:{$ne:<value>}}`  | `db.col.find({"likes":{$ne:50}}).pretty()`  | `where likes != 50`     |
+                      | ---------- | ------------------------ | ------------------------------------------- | ----------------------- |
+          | 等于       | `{<key>:<value>`}        | `db.col.find({"by":"菜鸟教程"}).pretty()`   | `where by = '菜鸟教程'` |
+          | 小于       | `{<key>:{$lt:<value>}}`  | `db.col.find({"likes":{$lt:50}}).pretty()`  | `where likes < 50`      |
+          | 小于或等于 | `{<key>:{$lte:<value>}}` | `db.col.find({"likes":{$lte:50}}).pretty()` | `where likes <= 50`     |
+          | 大于       | `{<key>:{$gt:<value>}}`  | `db.col.find({"likes":{$gt:50}}).pretty()`  | `where likes > 50`      |
+          | 大于或等于 | `{<key>:{$gte:<value>}}` | `db.col.find({"likes":{$gte:50}}).pretty()` | `where likes >= 50`     |
+          | 不等于     | `{<key>:{$ne:<value>}}`  | `db.col.find({"likes":{$ne:50}}).pretty()`  | `where likes != 50`     |
 
         - ```sql
             -- MongoDB AND 查询
@@ -287,15 +283,15 @@ portX 可选的指定端口，如果不填，默认为27017
             ```
 
         - | 表达式    | 描述                                           | 实例                                                         |
-            | --------- | ---------------------------------------------- | ------------------------------------------------------------ |
-            | $sum      | 计算总和。                                     | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : "$likes"}}}]) |
-            | $avg      | 计算平均值                                     | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$avg : "$likes"}}}]) |
-            | $min      | 获取集合中所有文档对应值得最小值。             | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$min : "$likes"}}}]) |
-            | $max      | 获取集合中所有文档对应值得最大值。             | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$max : "$likes"}}}]) |
-            | $push     | 在结果文档中插入值到一个数组中。               | db.mycol.aggregate([{$group : {_id : "$by_user", url : {$push: "$url"}}}]) |
-            | $addToSet | 在结果文档中插入值到一个数组中，但不创建副本。 | db.mycol.aggregate([{$group : {_id : "$by_user", url : {$addToSet : "$url"}}}]) |
-            | $first    | 根据资源文档的排序获取第一个文档数据。         | db.mycol.aggregate([{$group : {_id : "$by_user", first_url : {$first : "$url"}}}]) |
-            | $last     | 根据资源文档的排序获取最后一个文档数据         | db.mycol.aggregate([{$group : {_id : "$by_user", last_url : {$last : "$url"}}}]) |
+                      | --------- | ---------------------------------------------- | ------------------------------------------------------------ |
+          | $sum      | 计算总和。                                     | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : "$likes"}}}]) |
+          | $avg      | 计算平均值                                     | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$avg : "$likes"}}}]) |
+          | $min      | 获取集合中所有文档对应值得最小值。             | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$min : "$likes"}}}]) |
+          | $max      | 获取集合中所有文档对应值得最大值。             | db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$max : "$likes"}}}]) |
+          | $push     | 在结果文档中插入值到一个数组中。               | db.mycol.aggregate([{$group : {_id : "$by_user", url : {$push: "$url"}}}]) |
+          | $addToSet | 在结果文档中插入值到一个数组中，但不创建副本。 | db.mycol.aggregate([{$group : {_id : "$by_user", url : {$addToSet : "$url"}}}]) |
+          | $first    | 根据资源文档的排序获取第一个文档数据。         | db.mycol.aggregate([{$group : {_id : "$by_user", first_url : {$first : "$url"}}}]) |
+          | $last     | 根据资源文档的排序获取最后一个文档数据         | db.mycol.aggregate([{$group : {_id : "$by_user", last_url : {$last : "$url"}}}]) |
 
     - **MongoDB 索引**
 
@@ -306,16 +302,18 @@ portX 可选的指定端口，如果不填，默认为27017
             ```
 
         - | Parameter          | Type          | Description                                                  |
-            | ------------------ | ------------- | ------------------------------------------------------------ |
-            | background         | Boolean       | 建索引过程会阻塞其它数据库操作，background可指定以后台方式创建索引，即增加 "background" 可选参数。 "background" 默认值为**false**。 |
-            | unique             | Boolean       | 建立的索引是否唯一。指定为true创建唯一索引。默认值为**false**. |
-            | name               | string        | 索引的名称。如果未指定，MongoDB的通过连接索引的字段名和排序顺序生成一个索引名称 |
-            | sparse             | Boolean       | 对文档中不存在的字段数据不启用索引；这个参数需要特别注意，如果设置为true的话，在索引字段中不会查询出不包含对应字段的文档.。默认值为 **false**. |
-            | expireAfterSeconds | integer       | 指定一个以秒为单位的数值，完成 TTL设定，设定集合的生存时间。 |
-            | v                  | index version | 索引的版本号。默认的索引版本取决于mongod创建索引时运行的版本。 |
-            | weights            | document      | 索引权重值，数值在 1 到 99,999 之间，表示该索引相对于其他索引字段的得分权重。 |
-            | default_language   | string        | 对于文本索引，该参数决定了停用词及词干和词器的规则的列表。 默认为英语 |
-            | language_override  | string        | 对于文本索引，该参数指定了包含在文档中的字段名，语言覆盖默认的language，默认值为 language. |
+                      | ------------------ | ------------- | ------------------------------------------------------------ |
+          | background         | Boolean       | 建索引过程会阻塞其它数据库操作，background可指定以后台方式创建索引，即增加 "background" 可选参数。 "background" 默认值为**
+          false**。 |
+          | unique             | Boolean       | 建立的索引是否唯一。指定为true创建唯一索引。默认值为**false**. |
+          | name               | string        | 索引的名称。如果未指定，MongoDB的通过连接索引的字段名和排序顺序生成一个索引名称 |
+          | sparse             | Boolean       | 对文档中不存在的字段数据不启用索引；这个参数需要特别注意，如果设置为true的话，在索引字段中不会查询出不包含对应字段的文档.。默认值为 **
+          false**. |
+          | expireAfterSeconds | integer       | 指定一个以秒为单位的数值，完成 TTL设定，设定集合的生存时间。 |
+          | v                  | index version | 索引的版本号。默认的索引版本取决于mongod创建索引时运行的版本。 |
+          | weights            | document      | 索引权重值，数值在 1 到 99,999 之间，表示该索引相对于其他索引字段的得分权重。 |
+          | default_language   | string        | 对于文本索引，该参数决定了停用词及词干和词器的规则的列表。 默认为英语 |
+          | language_override  | string        | 对于文本索引，该参数指定了包含在文档中的字段名，语言覆盖默认的language，默认值为 language. |
 
 ### Mongo关系处理
 

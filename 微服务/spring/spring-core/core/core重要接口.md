@@ -1,5 +1,5 @@
 1. ParameterNameDiscoverer
-    -  PrioritizedParameterNameDiscoverer
+    - PrioritizedParameterNameDiscoverer
     - StandardReflectionParameterNameDiscoverer
     - LocalVariableTableParameterNameDiscoverer
 

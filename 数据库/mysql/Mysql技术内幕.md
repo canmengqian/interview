@@ -1,10 +1,11 @@
 # Mysql技术内幕
 
-- 官方参考文档 http://www.searchdoc.cn/rdbms/mysql/dev.mysql.com/doc/refman/5.7/en/innodb-buffer-pool-stats-table.com.coder114.cn.html
+-
+官方参考文档 http://www.searchdoc.cn/rdbms/mysql/dev.mysql.com/doc/refman/5.7/en/innodb-buffer-pool-stats-table.com.coder114.cn.html
 - Checkpoint的机制
 - 缓冲池中缓存的数据页类型
 - 允许有多个缓冲池实例。每个页根据哈希值平均分配到不同缓冲池实例中。
-- 压缩页,unzip_LRU 
+- 压缩页,unzip_LRU
 - 伙伴算法
 - 脏页
 - 重做日志缓冲 ，Write Ahead Log策略
@@ -18,7 +19,8 @@
 - 表结构定义文件frm
 - 索引组织表
 - InnoDB逻辑存储结构
-- 启用了innodb_file_per_table的参数，需要注意的是每张表的表空间内存放的只是数据、索引和插入缓冲Bitmap页，其他类的数据，如回滚（undo）信息，插入缓冲索引页、系统事务信息，二次写缓冲（Double write buffer）等还是存放在原来的共享表空间内
+- 启用了innodb_file_per_table的参数，需要注意的是每张表的表空间内存放的只是数据、索引和插入缓冲Bitmap页，其他类的数据，如回滚（undo）信息，插入缓冲索引页、系统事务信息，二次写缓冲（Double write
+  buffer）等还是存放在原来的共享表空间内
 - infobright
 - InnoDB数据页。
 - 空闲链表
@@ -32,7 +34,7 @@
 - gap lock
 - 隐式提交的SQL语句
 - 数据库都提供了group commit的功能，即一次fsync可以刷新确保多个事务日志被写入文件
-- 
+-
 
 ```sql
 	SHOW ENGINE INNODB STATUS; -- 查看缓冲池指标
@@ -46,10 +48,10 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | innodb_flush_log_at_trx_commit                               |                                                              |
 | innodb_buffer_pool_size                                      | IBUF_POOL_SIZE_PER_MAX_SIZE=3，最大只能使用1/3的缓冲池内存   |
-| innodb_buffer_pool_instances   配置缓冲池实例                | innodb_change_buffer_max_size控制Change Buffer最大使用内存的数量：innodb_change_buffer_max_size值默认为25，<br>表示最多使用1/4的缓冲池内存空间，该参数的最大有效值为50 |
+| innodb_buffer_pool_instances 配置缓冲池实例                | innodb_change_buffer_max_size控制Change Buffer最大使用内存的数量：innodb_change_buffer_max_size值默认为25，<br>表示最多使用1/4的缓冲池内存空间，该参数的最大有效值为50 |
 | innodb_old_blocks_pct 使用LRU算法时的折中块位置              | innodb_change_buffering，用来开启各种Buffer的选项。<br>该参数可选的值为：inserts、deletes、purges、changes、all、none。inserts、deletes |
-| innodb_old_blocks_time 页读取到mid位置后需要等待多久才会被加入到LRU列表的热端 | innodb_adaptive_hash_index  启用hash索引                     |
-| innodb_log_buffer_size  重做日志缓冲池大小                   | innodb_flush_neighbors，用来控制是否启用刷新邻接页           |
+| innodb_old_blocks_time 页读取到mid位置后需要等待多久才会被加入到LRU列表的热端 | innodb_adaptive_hash_index 启用hash索引                     |
+| innodb_log_buffer_size 重做日志缓冲池大小                   | innodb_flush_neighbors，用来控制是否启用刷新邻接页           |
 | innodb_fast_shutdown Sharp/Fuzz Checkpoint                   | innodb_fast_shutdown 定义mysql关机模式                       |
 | innodb_lru_scan_depth                                        | innodb_force_recovery mysql恢复模式                          |
 | binlog_cache_size                                            |                                                              |

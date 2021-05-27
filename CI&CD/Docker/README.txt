@@ -1,0 +1,5 @@
+- docker安装，验证
+- docker镜像拉取
+- docker容器配置
+- docker暴露端口
+- docker file使用
