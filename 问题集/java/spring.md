@@ -26,6 +26,7 @@
 - [使用Spring Aop(@Aspect)加自定义注解记录日志以及请求响应时间](https://blog.csdn.net/Muscleheng/article/details/97136260)
 - [SpringBoot读取外部配置文件的方法](https://www.cnblogs.com/eternityz/p/12511777.html)
 - [Spring注解——同一接口有多个实现类，如何注入？@Resource、@Autowired、@Qualifier](https://blog.csdn.net/u010476994/article/details/80986435)
+- [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://zhuanlan.zhihu.com/p/161223943)
 
 ### Spring注解
 
@@ -53,6 +54,9 @@
 - [[Spring]~@JsonPropertyOrder（序列化时字段排序）](https://blog.csdn.net/qq_36841482/article/details/103388200)
 - [springboot项目获取yml配置的三种方法](https://blog.csdn.net/weixin_45690436/article/details/106544754)
 - [SpringCache常用注解及key中参数值为null的问题解析](https://blog.csdn.net/qq_34972627/article/details/91510820)
+- [spring缓存注解的condition属性](https://blog.csdn.net/hallytude/article/details/53769055)
+- [Spring缓存注解@Cacheable、@CacheEvict、@CachePut使用](https://www.cnblogs.com/fashflying/p/6908028.html)
+- [springboot入门01 – 缓存的使用](https://www.zhyea.com/2019/08/25/springboot-base-using-cache.html)
 
 ### Spring Validation
 
@@ -89,6 +93,8 @@
 - [Spring Boot Admin 2.1.0 全攻略](https://juejin.cn/post/6844903757721894920)
 - [应用监控之 Spring Boot Admin 使用及配置](https://blog.csdn.net/u014217825/article/details/103061261/)
 - [Spring Boot Admin](https://greedypirate.github.io/2018/09/07/Spring-Cloud%E7%B3%BB%E5%88%97-Spring-Boot-Admin/#Spring-Boot-Admin%E4%BB%8B%E7%BB%8D)
+- [SpringBoot入坑指南之四：使用Spring Boot Admin进行服务监控](https://www.jianshu.com/p/25d5a85ce8dd)
+- [Spring Boot Admin的使用](https://zhuanlan.zhihu.com/p/140675547)
 
 ## Skywalking
 
@@ -133,3 +139,19 @@
 ## Logback
 
 - [把logback.xml放到jar外面](https://blog.csdn.net/zhengdesheng19930211/article/details/64443626)
+- [Spring Boot 配置文件和日志文件放到jar之外](https://blog.csdn.net/supper10090/article/details/78285365/)
+
+# SpringTest
+
+[【SpringBoot】掌握这两个属性，你的测试类可以启动的更快些](https://juejin.cn/post/6844904096839761933)
+
+## 静态资源
+
+- [SpringBoot 如何配置静态资源的地址与访问路径](https://blog.csdn.net/csdnluolei/article/details/86715333)
+- [SpringBoot 静态资源 使用项目外部路径图片 跨域问题CORS 解决](https://blog.csdn.net/h356363/article/details/90547998)
+- [【SpringBoot】静态资源规则配置](https://blog.csdn.net/qq877728715/article/details/110422199)
+
+## 杂项
+
+- [SpringBoot2.x 给Controller的RequestMapping添加统一前缀](https://blog.csdn.net/gzt19881123/article/details/104530561)
+- [springboot-整合多数据源配置](https://www.cnblogs.com/aizen-sousuke/p/11756279.html)

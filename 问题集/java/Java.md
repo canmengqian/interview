@@ -19,6 +19,10 @@
 - [观察者模式(jdk实现)](https://www.cnblogs.com/lishuaiqi/p/11094208.html)
 - [java.library.path和LD_LIBRARY_PATH的介绍与区别](https://blog.csdn.net/gaussrieman123/article/details/106258530)
 
+### 枚举
+
+- [java枚举类在switch中的总结（Constant expression required以及An enum switch case label must be the unqualif报错..）](https://blog.csdn.net/qq_29611427/article/details/103387515)
+
 ### 字符串
 
 - [试试Java8中的StringJoiner](https://mp.weixin.qq.com/s/l0xB1ZBSTEbXvj5CROjAgA)
@@ -28,6 +32,8 @@
 - [【Java8新特性】04 详解Lambda表达式中Predicate Function Consumer Supplier函数式接口](https://blog.csdn.net/guoguo527/article/details/108805470)
 - [java8两个集合取交集、并集与差集](https://www.cnblogs.com/jay1987/p/12066252.html) :heavy_exclamation_mark:
 - [java集合的交集，并集，差集](https://blog.csdn.net/qq_25806863/article/details/70312046):heavy_exclamation_mark:
+- [list stream: reduce的使用实例](https://blog.csdn.net/zhangzehai2234/article/details/106369542)
+- [Java 8 Stream peek 与 map的区别](https://blog.csdn.net/tckt75433/article/details/81510743)
 
 ### IO & NIO
 
@@ -44,6 +50,7 @@
 
 - [20个使用 Java CompletableFuture的例子](https://mp.weixin.qq.com/s/dGFbmNIIMMfEF312Idh-9Q)
 - [CompletableFuture基本用法](https://www.cnblogs.com/cjsblog/p/9267163.html)
+- [为什么阿里要禁用 Executors 创建线程池？](https://blog.csdn.net/qq_26400953/article/details/103122284)
 
 ## Java虚拟机
 
@@ -53,7 +60,19 @@
 - [线上服务的JVM参数配置](https://blog.csdn.net/shanhuhau/article/details/53911384)
 - [找不到或无法加载主类 .encoding=utf-8 解决](https://blog.csdn.net/weixin_45590909/article/details/107192594)
 
+## 功能
+
+- [java实现的可以无限级别添加子节点的菜单树](https://www.cnblogs.com/emily1130/p/5570565.html)
+
 # Java框架
+
+## 网络
+
+- [java实现Telnet连接](https://www.cnblogs.com/visoncheng/p/3665194.html)
+
+### 缓存
+
+- [OHC Java堆外缓存详解与应用](https://www.cnblogs.com/liang1101/p/13499781.html)
 
 ## 图片处理
 
@@ -115,8 +134,11 @@
 - [JAVA中使用JWT](https://www.cnblogs.com/wangrongwen/p/13682107.html)
 - [JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
 - [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)
+- [Java基于JWT的token认证](https://blog.csdn.net/itcast_cn/article/details/97757813)
 
 #### OAUTH2
+
+#### 加解密
 
 ### 任务调度
 
