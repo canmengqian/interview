@@ -1,6 +1,0 @@
-- RegistrationBean
-
-```java
-
-
-```

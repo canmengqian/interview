@@ -34,6 +34,7 @@
 - [java集合的交集，并集，差集](https://blog.csdn.net/qq_25806863/article/details/70312046):heavy_exclamation_mark:
 - [list stream: reduce的使用实例](https://blog.csdn.net/zhangzehai2234/article/details/106369542)
 - [Java 8 Stream peek 与 map的区别](https://blog.csdn.net/tckt75433/article/details/81510743)
+- [Java8 使用 stream().sorted()对List集合进行排序](https://www.cnblogs.com/codecat/p/10873757.html)
 
 ### IO & NIO
 
@@ -66,11 +67,15 @@
 
 # Java框架
 
+## BeetlSQL
+
+- [BeetlSQL3 官方使用手册](https://www.kancloud.cn/xiandafu/beetlsql3_guide/1958112)
+
 ## 网络
 
 - [java实现Telnet连接](https://www.cnblogs.com/visoncheng/p/3665194.html)
 
-### 缓存
+## 缓存
 
 - [OHC Java堆外缓存详解与应用](https://www.cnblogs.com/liang1101/p/13499781.html)
 
@@ -125,11 +130,13 @@
 
 - [还在用Logback？Log4j2的异步性能](https://mp.weixin.qq.com/s/ZdownDFFPL8tSRe1zU83Nw)
 
-### 安全与认证
+## 安全与认证
 
-#### SHIRO
+### SHIRO
 
-#### JWT
+- [Shiro步步为营--如何优雅地与JWT集成](https://blog.csdn.net/pengjunlee/article/details/95600843)
+
+### JWT
 
 - [JAVA中使用JWT](https://www.cnblogs.com/wangrongwen/p/13682107.html)
 - [JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
