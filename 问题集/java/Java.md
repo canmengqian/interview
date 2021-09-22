@@ -2,6 +2,10 @@
 
 # Java问题
 
+## 异常
+
+- [[java]01受检异常和非受检异常的区别](https://blog.csdn.net/happygan520/article/details/104430100)
+
 - [Caffeine Cache-高性能Java本地缓存组件](https://www.cnblogs.com/rickiyang/p/11074158.html)
 - [java – 如何使用Mockito测试DAO方法？](http://www.voidcn.com/article/p-kbtvonjc-btp.html)
 - [关于排序：为什么Java中没有SortedList？](https://www.codenong.com/8725387/)
@@ -64,6 +68,18 @@
 - [java实现的可以无限级别添加子节点的菜单树](https://www.cnblogs.com/emily1130/p/5570565.html)
 
 # Java框架
+
+## Echarts-Java
+
+- [**ECharts-Java** ECharts - Java 类库](https://www.oschina.net/p/echarts-java)
+
+### VJTOOLS
+
+- https://vipshop.github.io/vjtools/#/
+
+## Swagger
+
+- [SWAGGER 文件上传](https://www.cnblogs.com/dzcWeb/p/7842993.html)
 
 ## BeetlSQL
 
