@@ -78,6 +78,9 @@
 - [Springboot配置使用ssl，使用https](https://www.cnblogs.com/duanxz/p/9155509.html)
 - [spring boot排除扫描类的三种方式](https://blog.csdn.net/micro_hz/article/details/98883597)
 - [Spring Boot 项目瘦身指南，瘦到不可思议](https://www.cnblogs.com/niceyoo/p/14083706.html)
+- [SpringBoot 官方建议我们不要随意摆放 Application 启动类](https://my.oschina.net/nimo10050/blog/4937984)
+- [SpringBoot测试Controller层](https://www.cnblogs.com/caofanqi/p/10836459.html)
+- [Springboot中如何引入本地jar包，并通过maven把项目成功打包成jar包部署](https://www.cnblogs.com/liukunjava/p/9577768.html)
 
 ## WebSocket
 
@@ -143,7 +146,9 @@
 
 # SpringTest
 
-[【SpringBoot】掌握这两个属性，你的测试类可以启动的更快些](https://juejin.cn/post/6844904096839761933)
+- [【SpringBoot】掌握这两个属性，你的测试类可以启动的更快些](https://juejin.cn/post/6844904096839761933)
+
+- [SpringBoot测试Controller层](https://www.cnblogs.com/caofanqi/p/10836459.html)
 
 ## 静态资源
 
