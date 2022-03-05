@@ -1,8 +1,10 @@
 [TOC]
 
-
-
 # Java问题
+
+## 异常
+
+- [[java]01受检异常和非受检异常的区别](https://blog.csdn.net/happygan520/article/details/104430100)
 
 - [Caffeine Cache-高性能Java本地缓存组件](https://www.cnblogs.com/rickiyang/p/11074158.html)
 - [java – 如何使用Mockito测试DAO方法？](http://www.voidcn.com/article/p-kbtvonjc-btp.html)
@@ -19,15 +21,15 @@
 - [观察者模式(jdk实现)](https://www.cnblogs.com/lishuaiqi/p/11094208.html)
 - [java.library.path和LD_LIBRARY_PATH的介绍与区别](https://blog.csdn.net/gaussrieman123/article/details/106258530)
 
-### 枚举
+## 枚举
 
 - [java枚举类在switch中的总结（Constant expression required以及An enum switch case label must be the unqualif报错..）](https://blog.csdn.net/qq_29611427/article/details/103387515)
 
-### 字符串
+## 字符串
 
 - [试试Java8中的StringJoiner](https://mp.weixin.qq.com/s/l0xB1ZBSTEbXvj5CROjAgA)
 
-### Java8
+## Java8
 
 - [【Java8新特性】04 详解Lambda表达式中Predicate Function Consumer Supplier函数式接口](https://blog.csdn.net/guoguo527/article/details/108805470)
 - [java8两个集合取交集、并集与差集](https://www.cnblogs.com/jay1987/p/12066252.html) :heavy_exclamation_mark:
@@ -35,19 +37,20 @@
 - [list stream: reduce的使用实例](https://blog.csdn.net/zhangzehai2234/article/details/106369542)
 - [Java 8 Stream peek 与 map的区别](https://blog.csdn.net/tckt75433/article/details/81510743)
 - [Java8 使用 stream().sorted()对List集合进行排序](https://www.cnblogs.com/codecat/p/10873757.html)
+- [Java Files.list教程](https://geek-docs.com/java/java-tutorial/fileslist.html)
 
-### IO & NIO
+## IO & NIO
 
 - [Java DirectoryStream教程](https://geek-docs.com/java/java-tutorial/directorystream.html)
 - [8个java 网络编程框架介绍](https://blog.csdn.net/lldouble/article/details/80741805)
 - [压缩20M文件从30秒到1秒的优化过程](https://mp.weixin.qq.com/s/h7fH4P39A8dPvxPBBWhTIw)
 - [Caffeine Cache~高性能 Java 本地缓存之王](https://zhuanlan.zhihu.com/p/192706425?utm_source=wechat_session)
 
-### 回调
+## 回调
 
 - [Java回调机制总结](https://www.cnblogs.com/prayjourney/p/9667835.html)
 
-### 并发多线程
+## 并发多线程
 
 - [20个使用 Java CompletableFuture的例子](https://mp.weixin.qq.com/s/dGFbmNIIMMfEF312Idh-9Q)
 - [CompletableFuture基本用法](https://www.cnblogs.com/cjsblog/p/9267163.html)
@@ -66,6 +69,32 @@
 - [java实现的可以无限级别添加子节点的菜单树](https://www.cnblogs.com/emily1130/p/5570565.html)
 
 # Java框架
+
+## 算法类
+
+- [字符串相似度计算工具和算法](https://blog.csdn.net/qq_32447301/article/details/107269350)
+
+## MapStruct
+
+- [mapstruct使用详解](https://www.cnblogs.com/mmzs/p/12735212.html)
+
+## Echarts-Java
+
+- [**ECharts-Java** ECharts - Java 类库](https://www.oschina.net/p/echarts-java)
+- [ECharts-Java使用Java快速开发ECharts图表](https://blog.csdn.net/isea533/article/details/43225717)
+- [后台生成EChart报表图片并插入到Word文件中](https://www.cnblogs.com/helios-fz/p/14524566.html)
+- [java后台生成echarts图片](https://www.cnblogs.com/lxp-java/p/13674384.html)
+- **[EChartsConvert](https://gitee.com/saintlee/echartsconvert)**
+- [Poi-tl Documentation](http://deepoove.com/poi-tl/#_%E5%9B%BE%E7%89%87)
+- 
+
+## VJTOOLS
+
+- https://vipshop.github.io/vjtools/#/
+
+## Swagger
+
+- [SWAGGER 文件上传](https://www.cnblogs.com/dzcWeb/p/7842993.html)
 
 ## BeetlSQL
 
@@ -86,72 +115,82 @@
 
 ## 文件处理
 
-### JNOTIFY
+## JNOTIFY
 
 - [JNotify监听服务器文件变化——Java实现](https://www.jianshu.com/p/34b38d050f72)
 - [文件实时监控--jnotify的使用（Windows环境下）](https://blog.csdn.net/stalin_/article/details/80234979)
 - [使用 inotify 踩过的坑](https://www.jianshu.com/p/46b2bfad3d61)
 
-### POI
+## EASYPOI
+
+- [EasyPoi教程](http://easypoi.mydoc.io/#text_231892)
+- [悟耘开源](https://gitee.com/lemur) / [easypoi](https://gitee.com/lemur/easypoi)
+- [easypoi导出动态表头excel](https://www.cnblogs.com/dw3306/p/12416843.html)
+
+## EasyExcel
+
+- ## 
+
+## POI
 
 - [POI - 读取Excel2003、Excel2007或更高级的兼容性问题](https://blog.csdn.net/it_wangxiangpan/article/details/42778167)
 
-### 规则引擎
+## 规则引擎
 
 - [从0到1：构建强大且易用的规则引擎](https://tech.meituan.com/2017/06/09/maze-framework.html)
 
-### jackson
+## jackson
 
 - [Jackson 反序列化时 大小写不敏感设置](https://blog.csdn.net/qfzhangwei/article/details/85009163)
 
-### p6sy
+## p6sy
 
 - [监控和剖析数据库操作 -- P6Spy、SQL Profiler、IronTrack SQL 使用简介](https://www.ibm.com/developerworks/cn/java/j-lo-p6spy/)
 - [为你的 项目安装Sql跟踪工具-P6Spy](https://blog.csdn.net/zknxx/article/details/69070330)
 - [使用 P6Spy 来格式化 SQL 语句，支持 Hibernate 和 iBATIS](https://www.cnblogs.com/luodengxiong/p/6766357.html)
 - [P6Spy使用](https://www.cnblogs.com/baby123/p/12610750.html)
 
-### druid
+## druid
 
 - [DBType not support : null](https://blog.csdn.net/u011818862/article/details/108838719)
 - [SpringBoot - 开启Druid监控统计功能教程（SQL监控、慢SQL记录、去广告）](https://www.hangge.com/blog/cache/detail_2876.html)
 
-### OCR
+## OCR
 
 - [JAVA OCR图片识别](https://www.cnblogs.com/huanghongbo/p/9066225.html)
 
-### Guava
+## Guava
 
 - [Google Guava官方教程（中文版）](https://ifeve.com/google-guava/)
 
-### 日志框架
+# 日志框架
 
-### Log4j2
+## Log4j2
 
 - [还在用Logback？Log4j2的异步性能](https://mp.weixin.qq.com/s/ZdownDFFPL8tSRe1zU83Nw)
 
-## 安全与认证
+# 安全与认证
 
-### SHIRO
+## SHIRO
 
 - [Shiro步步为营--如何优雅地与JWT集成](https://blog.csdn.net/pengjunlee/article/details/95600843)
 
-### JWT
+## JWT
 
 - [JAVA中使用JWT](https://www.cnblogs.com/wangrongwen/p/13682107.html)
 - [JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
 - [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)
 - [Java基于JWT的token认证](https://blog.csdn.net/itcast_cn/article/details/97757813)
 
-#### OAUTH2
+## OAUTH2
 
-#### 加解密
+# 加解密
 
-### 任务调度
+# 任务调度
 
 [分布式任务调度 SchedulerX](https://help.aliyun.com/product/147760.html?spm=a2c4g.11186623.6.540.5ca61623zPa2xo)
 
-### NETTY
+## NETTY
 
 - [Netty接收HTTP文件上传及文件下载](https://www.cnblogs.com/morethink/p/9787313.html)
 - [RxJava系列1(简介)](https://zhuanlan.zhihu.com/p/20687178)

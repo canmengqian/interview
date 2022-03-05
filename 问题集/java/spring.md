@@ -1,5 +1,34 @@
 [TOC]
 
+## Spring组件列表
+
+
+
+|            组件名称            |      作用      | 是否需要了解 | 完成度(无需,未完成,阅读完成,源码分析) |
+| :----------------------------: | :------------: | :----------: | :-----------------------------------: |
+| Spring Configuration Processor |   bean 配置    |              |                                       |
+|        Spring Security         |    安全认证    |      是      |                                       |
+|         Spring CredHub         |      凭证      |              |                                       |
+|         Spring Session         |  session处理   |              |                                       |
+|   Spring Session Data Redis    |  session处理   |              |                                       |
+|        Spring GraphQLs         |                |              |                                       |
+|          Spring Batch          |     批处理     |      是      |                                       |
+|          Spring LDAP           |  文件资源访问  |      否      |                 无需                  |
+|          Spring Shell          |   shell终端    |      是      |                未完成                 |
+|      Spring Statemachine       |     状态机     |              |                                       |
+|      Spring Web Services       |  web Service   |      否      |                 无需                  |
+|            Actuator            |      监控      |      是      |                未完成                 |
+|        SpringBoot Admin        |      监控      |      是      |                未完成                 |
+|     Spring Cloud Contract      |    契约测试    |              |                                       |
+|      SpringCloud Function      |                |              |                                       |
+|        SpringCloud Task        |                |              |                                       |
+|             Rureka             |    服务发现    |              |                                       |
+|           ZooKeeper            |                |              |                                       |
+|            GateWay             |    网关服务    |              |                                       |
+|          LoadBalancer          |     软负载     |              |                                       |
+|             Feign              | 三方请求客户端 |              |                                       |
+|                                |                |              |                                       |
+
 
 
 ## Spring
@@ -28,24 +57,40 @@
 - [Spring注解——同一接口有多个实现类，如何注入？@Resource、@Autowired、@Qualifier](https://blog.csdn.net/u010476994/article/details/80986435)
 - [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://zhuanlan.zhihu.com/p/161223943)
 
-### Spring注解
+## Spring注解
 
-#### Spring Conditional 注解
+### Spring Conditional 注解
 
 - [Spring @Conditional注解 详细讲解及示例](https://blog.csdn.net/xcy1193068639/article/details/81491071)
 
-#### Spring Role 类注解
+### Spring Role 类注解
 
-- ```java
-  @Role
-  @RolesAllowed()
-  @DeclareRoles()
-  @ServletSecurity
-  ```
+### 资源和配置类
 
-#### 资源和配置类
+## Spring EL
 
-### Spring Cache
+- [SpEL表达式总结](https://www.jianshu.com/p/e0b50053b5d3)
+- [springboot入门04 – 使用SpEL表达式](https://www.zhyea.com/2019/11/27/springboot-base-04-use-spel.html)
+- [【SpringBoot 基础系列】SpEL 语法扫盲与查询手册 ](https://www.cnblogs.com/yihuihui/p/12928323.html)
+- [Spring 表达式语言（SpEL）入门实战](https://blog.csdn.net/shichen2010/article/details/96504008)
+- [Spring5参考指南: SpEL](https://www.cnblogs.com/flydean/p/12680386.html)
+
+## Spring Shell 
+
+- [Spring Shell 中文文档](https://blog.csdn.net/u012881904/article/details/103329612)
+- [Spring系列学习之Spring Shell命令行](https://blog.csdn.net/boonya/article/details/85218773)
+- [深入理解 SpringBoot 注解 @ShellMethod](https://starrier.starrier.org/blogs/annotation-shellmethod.html)
+- [SpringShell命令分组-@ShellCommandGroup](https://www.jianshu.com/p/adce6e99ed83)
+- [ShellOption使用教程](https://www.cnblogs.com/nuccch/p/11067342.html#spring-shell%E6%98%AF%E4%BB%80%E4%B9%88)
+- [参数校验](https://www.cnblogs.com/nuccch/p/11067342.html#spring-shell%E6%98%AF%E4%BB%80%E4%B9%88)
+- [@ShellMethodAvailability](https://www.cnblogs.com/nuccch/p/11067342.html#spring-shell%E6%98%AF%E4%BB%80%E4%B9%88)
+- [Spring Shell入门介绍](https://www.cnblogs.com/nuccch/p/11067342.html)
+
+## Spring加解密
+
+
+
+## Spring Cache
 
 - [使用@EventListener 和@Cacheable 来初始化缓存](https://www.thinbug.com/q/41699464)
 - [在@PostConstruct期间使用@Cacheable的Spring缓存不起作用](https://www.stacknoob.com/s/u2gsUEJbRN927FM4URfNK8)
@@ -58,13 +103,14 @@
 - [Spring缓存注解@Cacheable、@CacheEvict、@CachePut使用](https://www.cnblogs.com/fashflying/p/6908028.html)
 - [springboot入门01 – 缓存的使用](https://www.zhyea.com/2019/08/25/springboot-base-using-cache.html)
 
-### Spring Validation
+## Spring Validation
 
 - [Spring 参数校验的异常处理](https://juejin.cn/post/6844904003684302861)
 - [出现Not registered via @EnableConfigurationProperties or marked as Spring component](https://blog.csdn.net/weixin_41070914/article/details/89320361)
 - [使用maven profile指定配置文件打包适用多环境](https://blog.csdn.net/qiaqia609/article/details/79507675)
+- [spring @Validated 注解开发中使用group分组校验](https://blog.csdn.net/lklihaikunkun/article/details/80605425)
 
-### Spring Swagger
+## Spring Swagger
 
 - [swagger2在线文档@validated接口校验](https://blog.csdn.net/zx779441202/article/details/80020639)
 - [spring StopWatch用法](https://www.cnblogs.com/kaituorensheng/p/7105639.html)
@@ -78,6 +124,20 @@
 - [Springboot配置使用ssl，使用https](https://www.cnblogs.com/duanxz/p/9155509.html)
 - [spring boot排除扫描类的三种方式](https://blog.csdn.net/micro_hz/article/details/98883597)
 - [Spring Boot 项目瘦身指南，瘦到不可思议](https://www.cnblogs.com/niceyoo/p/14083706.html)
+- [SpringBoot 官方建议我们不要随意摆放 Application 启动类](https://my.oschina.net/nimo10050/blog/4937984)
+- [SpringBoot测试Controller层](https://www.cnblogs.com/caofanqi/p/10836459.html)
+- [Springboot中如何引入本地jar包，并通过maven把项目成功打包成jar包部署](https://www.cnblogs.com/liukunjava/p/9577768.html)
+
+## SpringBatch
+
+- [spring batch数据库表数据结构](http://www.kailing.pub/article/index/arcid/194.html)
+- [决战数据库-spring batch(4)数据库到数据库](https://blog.csdn.net/masson32/article/details/91351279)
+
+- [欠你们的SpringBatch数据库分析，终于有时间整理了](https://baijiahao.baidu.com/s?id=1645167255676713457&wfr=spider&for=pc)
+- [Springboot 整合 spring batch 实现批处理 ，小白文实例讲解](https://blog.csdn.net/qq_35387940/article/details/108193473)
+- [大量数据也不在话下，Spring Batch并行处理四种模式初探](https://zhuanlan.zhihu.com/p/240965776)
+- [通过例子讲解Spring Batch入门，优秀的批处理框架](https://www.pkslow.com/archives/spring-batch-introduction)
+- [spring batch结合定时任务记录每一次结果](https://blog.csdn.net/u014172271/article/details/80413135/)
 
 ## WebSocket
 
@@ -141,9 +201,15 @@
 - [把logback.xml放到jar外面](https://blog.csdn.net/zhengdesheng19930211/article/details/64443626)
 - [Spring Boot 配置文件和日志文件放到jar之外](https://blog.csdn.net/supper10090/article/details/78285365/)
 
-# SpringTest
+## Spring Cloud Contract：契约测试
 
-[【SpringBoot】掌握这两个属性，你的测试类可以启动的更快些](https://juejin.cn/post/6844904096839761933)
+- 
+
+## SpringTest
+
+- [【SpringBoot】掌握这两个属性，你的测试类可以启动的更快些](https://juejin.cn/post/6844904096839761933)
+
+- [SpringBoot测试Controller层](https://www.cnblogs.com/caofanqi/p/10836459.html)
 
 ## 静态资源
 

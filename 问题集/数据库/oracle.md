@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 ## 数据库
 
 ### Oracle问题
@@ -25,6 +29,22 @@
 - [group by 为什么 distinct 效率高](https://www.cnblogs.com/yangfeizbj/p/5446516.html)
 - [oracle生成一段时间的所有日期](https://blog.csdn.net/weixin_34326179/article/details/91990809)
 - [Oracle中生成随机数的函数](https://www.cnblogs.com/lgzslf/archive/2008/11/29/1343685.html)
+
+### 函数
+
+- [sql替换数据库字段中的字符](https://baijiahao.baidu.com/s?id=1552859437310998&wfr=spider&for=pc)
+
+### 日期
+
+- [oracle中如何判断某个日期是星期几](https://www.cnblogs.com/remember-forget/p/7531893.html)
+- 
+
+### 索引
+
+- [唯一索引与主键索引的比较](https://blog.csdn.net/huangli1466384630/article/details/87830569)
+- [Oracle B-tree 索引结构、如何存储及其优势](https://www.cnblogs.com/liuning8023/archive/2012/11/17/2775472.html)
+-  [索引本身失效](https://wenku.baidu.com/view/9716700fba1aa8114431d9c2.html)
+- 
 
 ### mysql
 

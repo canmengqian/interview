@@ -1,0 +1,1 @@
+- [Drools Workbench 7.8.Final + Spring Boot实现动态规则](https://blog.csdn.net/w1636620165/article/details/81280673)
