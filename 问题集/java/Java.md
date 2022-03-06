@@ -63,12 +63,51 @@
 - [JVM优化之调整大内存分页(LargePage)](https://blog.csdn.net/zero__007/article/details/52926366)
 - [线上服务的JVM参数配置](https://blog.csdn.net/shanhuhau/article/details/53911384)
 - [找不到或无法加载主类 .encoding=utf-8 解决](https://blog.csdn.net/weixin_45590909/article/details/107192594)
+- [Java 虚拟机宕机时打印dump，通过命令启动加的参数](https://blog.csdn.net/quliuwuyiz/article/details/103639189)
+- [JVM崩溃的原因及解决方法](https://blog.csdn.net/u013339596/article/details/18562011)
+- [使用JProfiler分析dump文件](https://blog.csdn.net/axin1240101543/article/details/105142141/)
+- [used/capacity/commited/reserved](used/capacity/commited/reserved)
+- [GC日志中，Metaspace的committed和reserved含义](https://blog.csdn.net/gx11251143/article/details/103586401/)
+- [jvm致命错误导致进程直接挂掉，错误日志分析及解决](https://blog.csdn.net/pop_xiaohao/article/details/75669692?locationNum=1&fps=1)
+- 
 
 ## 功能
 
 - [java实现的可以无限级别添加子节点的菜单树](https://www.cnblogs.com/emily1130/p/5570565.html)
 
+# Java9
+
+## 响应式
+
+- [JDK9特性-Reactive Stream 响应式流](https://blog.51cto.com/zero01/2293823)
+- [Java 9 新特性](https://www.runoob.com/java/java9-new-features.html)
+
 # Java框架
+
+## 文档处理:ItextPdf
+
+- [itextpdf5操作表格](https://www.cnblogs.com/whalesea/p/11776463.html)
+
+## 埋点vrml-metric
+
+- [Java优雅埋点API的设计思路](https://zhuanlan.zhihu.com/p/357026372)
+- [java埋点数据库架构_建立埋点规范](https://blog.csdn.net/weixin_42197841/article/details/112152039)
+
+## 埋点Micrometer
+
+- [给你的SpringBoot做埋点监控--JVM应用度量框架Micrometer](https://www.cnblogs.com/yunlongn/p/11343848.html)
+
+## 响应式框架: Reactor
+
+- [【打怪升级】Spring响应式编程](https://blog.csdn.net/get_set/category_7484996.html?spm=1001.2014.3001.5482)
+- [Reactor响应式编程系列（一）- 初识Reactor3](https://blog.csdn.net/Zong_0915/article/details/115027810?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&utm_relevant_index=2)
+- [reactor3快速上手](https://blog.csdn.net/m0_37556444/article/details/86288588)
+- [聊聊Spring Reactor反应式编程](https://zhuanlan.zhihu.com/p/45351651)
+- [Reactor3 中文文档（用户手册）](https://www.cnblogs.com/crazymakercircle/p/14292098.html)
+- [Reactor3 功能介绍二十六: Context](https://blog.csdn.net/qian_348840260/article/details/112673141)
+- [响应式编程](https://blog.csdn.net/qian_348840260/category_10546462.html)
+- [Reactor系列(十六)disposable停止Flux流](https://zhuanlan.zhihu.com/p/100354956)
+- [响应式编程中的Flux和Mono](https://blog.csdn.net/qq_28089993/article/details/89461814)
 
 ## 算法类
 

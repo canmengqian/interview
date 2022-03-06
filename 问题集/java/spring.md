@@ -57,6 +57,14 @@
 - [Spring注解——同一接口有多个实现类，如何注入？@Resource、@Autowired、@Qualifier](https://blog.csdn.net/u010476994/article/details/80986435)
 - [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://zhuanlan.zhihu.com/p/161223943)
 
+## Spring WebFlux
+
+
+
+## Spring yml
+
+- [springboot 中yml配置](https://www.cnblogs.com/paxing/p/13232235.html)
+
 ## Spring注解
 
 ### Spring Conditional 注解

@@ -33,6 +33,7 @@
 ### 函数
 
 - [sql替换数据库字段中的字符](https://baijiahao.baidu.com/s?id=1552859437310998&wfr=spider&for=pc)
+- [Oracle中将Clob字段转换成字符串](https://blog.csdn.net/u010670151/article/details/52210333)
 
 ### 日期
 
