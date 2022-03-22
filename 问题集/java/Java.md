@@ -55,6 +55,10 @@
 - [20个使用 Java CompletableFuture的例子](https://mp.weixin.qq.com/s/dGFbmNIIMMfEF312Idh-9Q)
 - [CompletableFuture基本用法](https://www.cnblogs.com/cjsblog/p/9267163.html)
 - [为什么阿里要禁用 Executors 创建线程池？](https://blog.csdn.net/qq_26400953/article/details/103122284)
+- [CAS机制专篇，超详细讲解！（比较与交换，compareAndSwap，CAS原理，Unsafe是什么？valueOffset是什么？CAS的缺点，CAS的应用场景，ABA问题，ABA问题的解决办法）](https://blog.csdn.net/m0_49690461/article/details/118880688)
+- [从原子类和UNSAFE来理解JAVA内存模型，ATOMICINTEGER的INCREMENTANDGET方法和UNSAFE部分源码介绍，VALUEOFFSET偏移量的理解](https://www.cnblogs.com/theRhyme/p/12129120.html)
+- [详解AtomicReference，AtomicStampedReference与AtomicMarkableReference的区别](https://blog.csdn.net/weixin_39098944/article/details/107946935)
+- [Java并发编程札记-(三)JUC原子类-06JDK1.8新增：LongAdder、DoubleAdder、LongAccumulator、DoubleAccumulator](https://blog.csdn.net/panweiwei1994/article/details/78739264)
 
 ## Java虚拟机
 
@@ -69,7 +73,10 @@
 - [used/capacity/commited/reserved](used/capacity/commited/reserved)
 - [GC日志中，Metaspace的committed和reserved含义](https://blog.csdn.net/gx11251143/article/details/103586401/)
 - [jvm致命错误导致进程直接挂掉，错误日志分析及解决](https://blog.csdn.net/pop_xiaohao/article/details/75669692?locationNum=1&fps=1)
-- 
+
+## JVM性能分析
+
+1.  [java汇编指令查看工具jitwatch](https://blog.csdn.net/u010597819/article/details/102999814)
 
 ## 功能
 
