@@ -78,6 +78,24 @@
 
 1.  [java汇编指令查看工具jitwatch](https://blog.csdn.net/u010597819/article/details/102999814)
 
+## Object
+
+1.  [Java并发编程之Object.wait()/notify()详解](https://blog.csdn.net/qq_38293564/article/details/80432875)
+2. [Object为啥提供wait方法](https://blog.csdn.net/HDXxiazai/article/details/100779032)
+
+## Class
+
+1.  [Java中isAssignableFrom的用法](https://www.cnblogs.com/greatfish/p/6097507.html)
+
+## AQS
+
+1.  [AbstractQueuedSynchronizer源码解读 ](https://www.cnblogs.com/micrari/p/6937995.html)
+
+## 引用
+
+1.  [阿里面试：说说强引用、软引用、弱引用、虚引用吧](https://zhuanlan.zhihu.com/p/358015444)
+2. 
+
 ## 功能
 
 - [java实现的可以无限级别添加子节点的菜单树](https://www.cnblogs.com/emily1130/p/5570565.html)

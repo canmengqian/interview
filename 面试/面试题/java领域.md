@@ -6,8 +6,20 @@
 
 1.  waite和notify实现方式,为什么会将这两个方法放在object类里
 2. waite 锁持有机制
+3.  谈一谈clone方法
+4.  谈一谈hashcode()和equals()方法
+5.  谈一谈 finalize() 
+6.  
+
+## Class类和类加载器
+
+## 反射
 
 ## Thread
+
+## ThreadLocal
+
+## 对象引用 Reference
 
 ## 并发工具类
 
@@ -36,3 +48,5 @@
 5. ArrayList.subList()的注意点
 6.  LinkedList的数据结构,LinkedList扩容策略。随机插入时的算法说一下
 7.  ArrayList读写效率VS LinkedList效率
+
+## 时间体系
