@@ -104,8 +104,14 @@
 
 ### Java8
 
+#### clock
+
 1. [java8 clock_详解Java8 新特性之日期API](https://blog.csdn.net/weixin_35117981/article/details/114151525)
-2. 
+2. [Java 8 新特性】Java Clock fixed() 设置固定时钟](https://blog.csdn.net/qq_31635851/article/details/117879217)
+3.  [Java Clock tick()用法及代码示例](https://vimsky.com/examples/usage/clock-tick-method-in-java-with-examples.html)
+4. [Java8的最新时间类库](https://www.cnblogs.com/lusaisai/p/13172345.html)
+5. [JDK8中新的日期时间工具类真的很好用](https://cloud.tencent.com/developer/article/1834465?from=15425)
+6. [【Java 8 新特性】Java 8 DateTimeFormatter 和 DateTimeFormatterBuilder 格式化日期示例](https://blog.csdn.net/qq_31635851/article/details/117703509)
 
 ### Java7
 
