@@ -65,7 +65,6 @@
 5. 并发上下文: ConsumeConcurrentlyContext
 6. 消费顺序上下文: ConsumeOrderlyContext
 7. 消息选择器: MessageSelector
-8. 
 
 ### 消息监听器 MessageListener
 
