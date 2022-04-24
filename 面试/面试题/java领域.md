@@ -49,6 +49,16 @@
 
 1.  线程池的7个参数及作用
 
+###  CompletableFuture
+
+###  Executor
+
+###  Executors
+
+###  ExecutorService
+
+###  ThreadPoolExecutor
+
 ## 数字类
 
 ### Double
@@ -91,6 +101,14 @@
 ## IO和NIO
 
 ## 进程调用器
+
+## 比较器
+
+### Comparable
+
+1.  [Comparable接口的使用](https://blog.csdn.net/weixin_43950014/article/details/114792869)
+
+###  Comparator
 
 # JVM虚拟机
 

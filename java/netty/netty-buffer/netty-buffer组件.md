@@ -1,3 +1,13 @@
+[TOC]
+
+
+
+# IO流
+
+1.  ByteBufInputStream
+2.  ByteBufOutputStream
+3.  ByteBufUtf8Writer
+
 # 字节缓冲区 ByteBufConvertible
 
 1.  字节缓冲区 ByteBuf
@@ -28,6 +38,32 @@
             3. 池化直接缓冲区:  PooledDirectByteBuf
         5. 只读缓冲区 ReadOnlyByteBufferBuf
 
+# 缓冲分配器 ByteBufAllocator
+
+1.   AbstractByteBufAllocator
+   1.   PooledByteBufAllocator
+   2.  UnpooledByteBufAllocator
+
+
+
 # 搜索程序工厂类  SearchProcessorFactory
 
 1.  多路搜索程序工厂:MultiSearchProcessorFactory
+    1.   AbstractMultiSearchProcessorFactory
+        1.   AhoCorasicSearchProcessorFactory
+2.  抽象搜索工厂: AbstractSearchProcessorFactory
+    1.   BitapSearchProcessorFactory
+    2.  KMP算法： KmpSearchProcessorFactory
+
+# 字符串搜索 SearchProcessor
+
+# 工具类
+
+1.  UnsafeByteBufUtil
+2.  LongPriorityQueue
+3.  HeapByteBufUtil
+4.  HeapByteBufUtil
+5.  LongLongHashMap
+6.  ByteBufUtilEx
+7.  ByteBufUtil
+
