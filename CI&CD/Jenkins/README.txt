@@ -2,3 +2,5 @@
 - [Jenkins 在windows下的安装与配置](https://blog.csdn.net/test_leader/article/details/108868710)
 - [jenkins安装、用户、权限管理](https://blog.csdn.net/xiaxiaozhang/article/details/74093096)
 - [开始使用 Jenkins](https://www.bookstack.cn/read/jenkins-2.263.x-zh/9c261ae97310b2ca.md)
+- [Jenkins的配置和心得(dockerfile、jenkinsfile+windows节点两种配置方式)](https://blog.csdn.net/qq_41919924/article/details/121649234)
+- [Jenkins之Pipeline流水线构建项目](https://yfy1995.blog.csdn.net/article/details/106267072?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-106267072-blog-111209388.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-106267072-blog-111209388.pc_relevant_antiscanv2&utm_relevant_index=4)

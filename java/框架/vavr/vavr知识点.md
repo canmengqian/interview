@@ -1,14 +1,34 @@
 [TOC]
 
-# Vavr知识点:
+# 集合
 
-## 控制器
+## Seq
 
-## 函数式编程
+## Map
+
+## Set
+
+## 元组
+
+# 函数式编程
 
 ### 函数组装
 
-## 模式匹配
+# 控制器
+
+## Option
+
+
+
+## Try
+
+1. andThen,andFinally操作
+2. 过滤匹配
+3. 取值
+4. 转换
+5. 异常恢复
+
+# 模式匹配
 
 ### 基础匹配
 
@@ -22,13 +42,14 @@
 
 ### 守护模式 Guards
 
-## 参照文档
+# 并发
+
+# 参照文档
 
 - [vavr-用户手册]([vavr-用户手册_ssehs的博客-CSDN博客_vavr](https://blog.csdn.net/ssehs/article/details/105831916))
 - [Vavr User Guide中英对照版 | 易学教程 (e-learn.cn)](https://www.e-learn.cn/topic/3551842)
-
 - [vavr：让你像写Scala一样写Java](https://www.cnblogs.com/javaadu/p/11742604.html)
-
 - [vavr：常用方法笔记]([vavr：常用方法笔记_summer2233的博客-CSDN博客_vavr](https://blog.csdn.net/jklizxcqwe/article/details/102776133))
-
-  
+- [VAVR：颠覆你的 Java 体验](https://juejin.cn/post/6854573219467411470)
+- 
+- 

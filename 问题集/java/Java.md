@@ -238,7 +238,13 @@
 
 - [JAVA OCR图片识别](https://www.cnblogs.com/huanghongbo/p/9066225.html)
 
-## Guava
+## 集合处理
+
+### vavr
+
+1.  
+
+### Guava
 
 - [Google Guava官方教程（中文版）](https://ifeve.com/google-guava/)
 
