@@ -1,0 +1,5 @@
+1.  [springboot 启动netty时，springboot内置tomcat无法启动](https://blog.csdn.net/qq_41571395/article/details/108635892)
+2. [Nginx配置WebSocket](https://juejin.cn/post/6844903745378058254)
+3. [详解nginx websocket配置](https://www.jb51.net/article/145390.htm)
+4. [netty实现websocket推送消息](https://blog.csdn.net/youku1327/article/details/123066488)
+5. [八种 WebSocket 框架的性能比较](https://cloud.tencent.com/developer/article/1376872)

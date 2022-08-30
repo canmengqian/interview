@@ -1,0 +1,1 @@
+1. [用Redis构建分布式锁](http://ifeve.com/redis-lock/)

@@ -1,0 +1,11 @@
+1. main
+2. http
+   1. server
+   2. location
+3. events
+4. upstream
+5. server
+6. location
+7. strem
+8. type
+9. if

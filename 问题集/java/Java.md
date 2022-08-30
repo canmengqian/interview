@@ -54,6 +54,7 @@
 
 - [20个使用 Java CompletableFuture的例子](https://mp.weixin.qq.com/s/dGFbmNIIMMfEF312Idh-9Q)
 - [CompletableFuture基本用法](https://www.cnblogs.com/cjsblog/p/9267163.html)
+- [多线程异步编程之Java8 CompletableFuture详解(保姆级教程)](https://blog.csdn.net/qq_42651904/article/details/119978812)
 - [为什么阿里要禁用 Executors 创建线程池？](https://blog.csdn.net/qq_26400953/article/details/103122284)
 - [CAS机制专篇，超详细讲解！（比较与交换，compareAndSwap，CAS原理，Unsafe是什么？valueOffset是什么？CAS的缺点，CAS的应用场景，ABA问题，ABA问题的解决办法）](https://blog.csdn.net/m0_49690461/article/details/118880688)
 - [从原子类和UNSAFE来理解JAVA内存模型，ATOMICINTEGER的INCREMENTANDGET方法和UNSAFE部分源码介绍，VALUEOFFSET偏移量的理解](https://www.cnblogs.com/theRhyme/p/12129120.html)
@@ -114,6 +115,10 @@
 6. [【Java 8 新特性】Java 8 DateTimeFormatter 和 DateTimeFormatterBuilder 格式化日期示例](https://blog.csdn.net/qq_31635851/article/details/117703509)
 
 ### Java7
+
+## Http网络
+
+- [HTTPS传输过程](https://blog.csdn.net/comphoner/article/details/122823186)
 
 # Java9
 

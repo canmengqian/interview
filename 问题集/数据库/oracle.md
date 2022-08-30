@@ -38,7 +38,7 @@
 ### 日期
 
 - [oracle中如何判断某个日期是星期几](https://www.cnblogs.com/remember-forget/p/7531893.html)
-- 
+- [oracle中计算两个日期的相差天数、月数、年数、小时数、分钟数、秒数等](https://blog.csdn.net/qiudechao1/article/details/103561871)
 
 ### 索引
 

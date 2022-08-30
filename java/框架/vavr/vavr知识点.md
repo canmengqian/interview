@@ -44,6 +44,12 @@
 
 # 并发
 
+# 问题点
+
+1.  fold和unfold
+2. 柯里化
+3. lifting
+
 # 参照文档
 
 - [vavr-用户手册]([vavr-用户手册_ssehs的博客-CSDN博客_vavr](https://blog.csdn.net/ssehs/article/details/105831916))
@@ -51,5 +57,4 @@
 - [vavr：让你像写Scala一样写Java](https://www.cnblogs.com/javaadu/p/11742604.html)
 - [vavr：常用方法笔记]([vavr：常用方法笔记_summer2233的博客-CSDN博客_vavr](https://blog.csdn.net/jklizxcqwe/article/details/102776133))
 - [VAVR：颠覆你的 Java 体验](https://juejin.cn/post/6854573219467411470)
-- 
-- 
+- [Scala中foldLeft的简单使用总结](https://blog.csdn.net/qq_29677083/article/details/84436462)

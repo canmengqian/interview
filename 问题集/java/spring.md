@@ -56,6 +56,9 @@
 - [SpringBoot读取外部配置文件的方法](https://www.cnblogs.com/eternityz/p/12511777.html)
 - [Spring注解——同一接口有多个实现类，如何注入？@Resource、@Autowired、@Qualifier](https://blog.csdn.net/u010476994/article/details/80986435)
 - [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://zhuanlan.zhihu.com/p/161223943)
+- [@ConditionalOnProperty的作用和用法](https://blog.csdn.net/sqlgao22/article/details/96476754)
+- [SpringBoot的拦截器中依赖注入为null的解决方法](http://www.zzvips.com/article/162743.html)
+- [聊聊如何让springboot拦截器的执行顺序按我们想要的顺序执行](https://www.cnblogs.com/linyb-geek/p/15927464.html)
 
 ## Spring WebFlux
 
@@ -135,6 +138,7 @@
 - [SpringBoot 官方建议我们不要随意摆放 Application 启动类](https://my.oschina.net/nimo10050/blog/4937984)
 - [SpringBoot测试Controller层](https://www.cnblogs.com/caofanqi/p/10836459.html)
 - [Springboot中如何引入本地jar包，并通过maven把项目成功打包成jar包部署](https://www.cnblogs.com/liukunjava/p/9577768.html)
+- [Springboot——拦截器](https://blog.csdn.net/gsycwh/article/details/119620158)
 
 ## SpringBatch
 
