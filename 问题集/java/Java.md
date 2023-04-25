@@ -24,6 +24,7 @@
 ## 枚举
 
 - [java枚举类在switch中的总结（Constant expression required以及An enum switch case label must be the unqualif报错..）](https://blog.csdn.net/qq_29611427/article/details/103387515)
+- [枚举类型的超类](https://www.yiibai.com/java_object_oriented_design/java_enum_class.html)
 
 ## 字符串
 
@@ -38,10 +39,12 @@
 - [Java 8 Stream peek 与 map的区别](https://blog.csdn.net/tckt75433/article/details/81510743)
 - [Java8 使用 stream().sorted()对List集合进行排序](https://www.cnblogs.com/codecat/p/10873757.html)
 - [Java Files.list教程](https://geek-docs.com/java/java-tutorial/fileslist.html)
+- [Java中map()和flatMap()的区别](https://www.techiedelight.com/zh/difference-map-flatmap-java/)
 
 ## IO & NIO
 
 - [Java DirectoryStream教程](https://geek-docs.com/java/java-tutorial/directorystream.html)
+- [Java NIO系列教程（十四） Java NIO Files](https://www.cnblogs.com/meow-world/articles/16026910.html)
 - [8个java 网络编程框架介绍](https://blog.csdn.net/lldouble/article/details/80741805)
 - [压缩20M文件从30秒到1秒的优化过程](https://mp.weixin.qq.com/s/h7fH4P39A8dPvxPBBWhTIw)
 - [Caffeine Cache~高性能 Java 本地缓存之王](https://zhuanlan.zhihu.com/p/192706425?utm_source=wechat_session)
@@ -74,6 +77,7 @@
 - [used/capacity/commited/reserved](used/capacity/commited/reserved)
 - [GC日志中，Metaspace的committed和reserved含义](https://blog.csdn.net/gx11251143/article/details/103586401/)
 - [jvm致命错误导致进程直接挂掉，错误日志分析及解决](https://blog.csdn.net/pop_xiaohao/article/details/75669692?locationNum=1&fps=1)
+- [JVM调优——大内存分页(LargePage)](https://blog.csdn.net/xihuanyuye/article/details/83930703)
 
 ## JVM性能分析
 
@@ -87,6 +91,7 @@
 ## Class
 
 1.  [Java中isAssignableFrom的用法](https://www.cnblogs.com/greatfish/p/6097507.html)
+2.  [isAssignableFrom方法的功能简介说明](https://blog.csdn.net/qq_25073223/article/details/125058467)
 
 ## AQS
 
@@ -142,6 +147,21 @@
 
 - [给你的SpringBoot做埋点监控--JVM应用度量框架Micrometer](https://www.cnblogs.com/yunlongn/p/11343848.html)
 
+## 指标采集:Actuator
+
+- [Spring boot——Actuator 详解](https://www.cnblogs.com/caoweixiong/p/15325382.html)
+
+## 高性能队列
+
+### Disruptor
+
+- [单机最快的队列Disruptor解析和使用](https://www.cnblogs.com/shuiyao3/p/17289423.html) :star:
+- [Disruptor 官方文档——入门](https://jitwxs.cn/4ae6dc03.html) :star:
+- [Disruptor 入门](https://doc.yonyoucloud.com/doc/wiki/project/disruptor-getting-started/index.html) :star:
+- [disruptor 史上最全 之3： 8大使用场景 图解](https://www.cnblogs.com/crazymakercircle/p/16750224.html)
+- [Disruptor工作原理，谁能用一个比喻形容下](https://www.zhihu.com/question/23235063)
+- [java服务-高性能队列-Disruptor使用场景](https://blog.csdn.net/philip502/article/details/125332082)
+
 ## 响应式框架 
 
 ### Reactor
@@ -159,7 +179,10 @@
 ### RxJava
 
 1. [RxJava教程](https://www.jdon.com/idea/rxjava/) :star:
-2. 
+2. [Android RxJava： 这是一份全面的 操作符 使用汇总 （含详细实例讲解）](https://juejin.cn/post/6844903614897455117#heading-8)
+3. [RxJava firstElement 与 lastElement 以及 elementAt](https://blog.csdn.net/qq_33210042/article/details/103353907)
+4. [RxJava2 Flowable blocking系列](https://blog.csdn.net/weixin_36709064/article/details/82936507)
+5. [RxJava 详解——简洁的异步操作](https://www.likecs.com/show-308409204.html)
 
 ## 算法类
 
@@ -187,9 +210,30 @@
 
 - [SWAGGER 文件上传](https://www.cnblogs.com/dzcWeb/p/7842993.html)
 
-## BeetlSQL
+## ORM
+
+### BeetlSQL
 
 - [BeetlSQL3 官方使用手册](https://www.kancloud.cn/xiandafu/beetlsql3_guide/1958112)
+
+### jdbc-plus
+
+- [jdbc-plus是一款基于JdbcTemplate增强工具包， 基于JdbcTemplate已实现分页、多租户等插件，可自定义扩展插件 ](https://www.cnblogs.com/deeround/p/17348431.html)
+
+### 存储过程plsql
+
+- [PL/SQL 教程](PL/SQL 教程) https://www.w3cschool.cn/pl_sql/pl_sql-53r23kdo.html
+
+## Retrofit
+
+- [Retrofit2 详解和使用（一）](https://blog.csdn.net/m0_37796683/article/details/90702095)
+- [Retrofit VS OpenFeign](https://blog.csdn.net/q1353122328/article/details/128812919)
+- [SpringBoot中的RestTemplate和Feign不好用？试试Retrofit！](https://blog.csdn.net/xmtblog/article/details/108162253)
+- [七大主流的HttpClient程序比较](https://zhuanlan.zhihu.com/p/269208311)
+
+## NETTY
+
+- [理解WebSocket](https://blog.csdn.net/qq_42992876/article/details/119862316)
 
 ## 网络
 
@@ -205,6 +249,10 @@
 - [Thumbnailator使用简介](https://www.xuebuyuan.com/3229489.html)
 
 ## 文件处理
+
+### OpenPDF
+
+- [OpenPDF](https://www.5axxw.com/wiki/content/w026e2)
 
 ## JNOTIFY
 
@@ -283,12 +331,15 @@
 
 # 加解密
 
+- [一文读懂密码学中的证书](https://zhuanlan.zhihu.com/p/131247347)
+
 # 任务调度
 
 [分布式任务调度 SchedulerX](https://help.aliyun.com/product/147760.html?spm=a2c4g.11186623.6.540.5ca61623zPa2xo)
 
-## NETTY
+# NETTY
 
 - [Netty接收HTTP文件上传及文件下载](https://www.cnblogs.com/morethink/p/9787313.html)
 - [RxJava系列1(简介)](https://zhuanlan.zhihu.com/p/20687178)
+- [Netty 学习手册](https://dongzl.github.io/netty-handbook/)
 

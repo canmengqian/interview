@@ -29,6 +29,7 @@
 - [group by 为什么 distinct 效率高](https://www.cnblogs.com/yangfeizbj/p/5446516.html)
 - [oracle生成一段时间的所有日期](https://blog.csdn.net/weixin_34326179/article/details/91990809)
 - [Oracle中生成随机数的函数](https://www.cnblogs.com/lgzslf/archive/2008/11/29/1343685.html)
+- [sql语法总结](https://blog.csdn.net/Carry1221/article/details/124515587)
 
 ### 函数
 
